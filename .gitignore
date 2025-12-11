@@ -1,0 +1,17 @@
+# Python venv
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
