@@ -1,0 +1,5 @@
+date,team,opponent,pts_for,pts_against,fga,fta,orb,tov,three_pa,three_pm
+2025-01-01,Team A,Team B,78,72,55,20,10,12,25,8
+2025-01-05,Team A,Team C,82,75,58,18,9,11,28,10
+2025-01-08,Team B,Team A,70,80,52,22,11,14,22,6
+2025-01-10,Team B,Team C,65,68,50,15,8,13,18,5
