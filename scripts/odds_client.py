@@ -65,6 +65,18 @@ class GameOdds:
                             best = oc
         return best
 
+    def get_all_book_lines(self, market_key: str) -> List[tuple]:
+        """Get every bookmaker's line for a market.
+
+        Returns list of (bookmaker_title, OddsMarket) tuples.
+        """
+        results = []
+        for bk in self.bookmakers:
+            for mkt in bk.markets:
+                if mkt.key == market_key:
+                    results.append((bk.title, mkt))
+        return results
+
 
 class OddsClient:
     def __init__(self, api_key: str):

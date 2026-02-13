@@ -9,6 +9,7 @@ import os
 import pathlib
 import time
 from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Dict, List, Optional
 
 import numpy as np
@@ -30,6 +31,18 @@ LEAGUE_AVG_PPP = 1.00
 def estimate_possessions(row: pd.Series) -> float:
     """Poss = FGA - ORB + TOV + 0.475 * FTA"""
     return row["fga"] - row["orb"] + row["tov"] + 0.475 * row["fta"]
+
+
+def compute_recency_weights(dates: pd.Series, half_life_days: int = 30) -> np.ndarray:
+    """Exponential decay weights: 2^(-days_ago / half_life_days).
+
+    Most recent game gets weight ~1.0, games 30 days ago get weight ~0.5, etc.
+    """
+    parsed = pd.to_datetime(dates)
+    most_recent = parsed.max()
+    days_ago = (most_recent - parsed).dt.total_seconds() / 86400.0
+    weights = np.power(2.0, -days_ago.values / half_life_days)
+    return weights
 
 
 @dataclass
@@ -184,20 +197,23 @@ def build_team_profile(
 
     n = len(team_df)
 
-    # Tempo
-    avg_poss = team_df["poss"].mean()
+    # Recency weights: exponential decay so recent games matter more
+    weights = compute_recency_weights(team_df["date"])
+
+    # Tempo (weighted mean, unweighted std)
+    avg_poss = np.average(team_df["poss"].values, weights=weights)
     tempo_std = team_df["poss"].std() if n > 1 else 0.0
 
-    # Efficiency
-    off_ppp = team_df["off_ppp"].mean()
-    def_ppp = team_df["def_ppp"].mean()
+    # Efficiency (weighted means, unweighted stds)
+    off_ppp = np.average(team_df["off_ppp"].values, weights=weights)
+    def_ppp = np.average(team_df["def_ppp"].values, weights=weights)
     eff_margin = off_ppp - def_ppp
     off_ppp_std = team_df["off_ppp"].std() if n > 1 else 0.0
     def_ppp_std = team_df["def_ppp"].std() if n > 1 else 0.0
 
-    # Scoring
-    avg_pts_for = team_df["pts_for"].mean()
-    avg_pts_against = team_df["pts_against"].mean()
+    # Scoring (weighted means, unweighted stds)
+    avg_pts_for = np.average(team_df["pts_for"].values, weights=weights)
+    avg_pts_against = np.average(team_df["pts_against"].values, weights=weights)
     pts_for_std = team_df["pts_for"].std() if n > 1 else 0.0
     pts_against_std = team_df["pts_against"].std() if n > 1 else 0.0
 

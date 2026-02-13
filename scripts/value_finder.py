@@ -2,9 +2,10 @@
 Compare model projections to sportsbook odds and rank betting opportunities.
 
 Uses normal CDF (scipy.stats.norm) to estimate P(bet wins).
+Supports multi-bookmaker analysis and safety-ranked bet recommendations.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Optional
 
 from scipy.stats import norm
@@ -28,12 +29,16 @@ class BetOpportunity:
     confidence: str         # "high", "medium", "low"
     category: str           # "safe", "value"
     reasoning: str
+    bookmaker: str = ""
+    kelly_fraction: float = 0.0
+    safety_score: float = 0.0
+    in_preferred_range: bool = False
 
 
 def american_to_implied_prob(odds: int) -> float:
     """
     Convert American odds to implied probability.
-    -110 → 52.4%, +150 → 40.0%
+    -110 -> 52.4%, +150 -> 40.0%
     """
     if odds < 0:
         return abs(odds) / (abs(odds) + 100)
@@ -59,36 +64,71 @@ def compute_model_win_prob(
     return norm.cdf(z)
 
 
-def _analyze_spread(
-    proj: MatchupProjection,
-    odds: GameOdds,
-) -> List[BetOpportunity]:
-    """Analyze spread bets."""
-    bets = []
-    spread_mkt = odds.get_consensus_line("spreads")
-    if not spread_mkt:
-        return bets
+def compute_kelly_fraction(
+    model_win_prob: float,
+    odds: int,
+    max_fraction: float = 0.05,
+) -> float:
+    """Kelly criterion fraction, capped at max_fraction (5%).
 
+    Kelly = (b*p - q) / b  where:
+      b = decimal odds - 1 (net payout per unit)
+      p = model win probability
+      q = 1 - p
+    """
+    if odds < 0:
+        b = 100.0 / abs(odds)
+    else:
+        b = odds / 100.0
+
+    if b <= 0:
+        return 0.0
+
+    p = model_win_prob
+    q = 1.0 - p
+    kelly = (b * p - q) / b
+
+    return max(0.0, min(kelly, max_fraction))
+
+
+def _is_preferred_range(odds: int) -> bool:
+    """Check if American odds fall in the preferred -400 to -250 range."""
+    return -400 <= odds <= -250
+
+
+def compute_safety_score(bet: BetOpportunity) -> float:
+    """Composite safety score for ranking bets.
+
+    Weights: 60% win_prob + 25% edge + 15% preferred_range bonus.
+    """
+    preferred_bonus = 1.0 if bet.in_preferred_range else 0.0
+    return 0.60 * bet.model_win_prob + 0.25 * bet.edge_pct + 0.15 * preferred_bonus
+
+
+def _analyze_spread_for_book(
+    proj: MatchupProjection,
+    game_odds: GameOdds,
+    bookmaker_title: str,
+    market: OddsMarket,
+) -> List[BetOpportunity]:
+    """Analyze spread bets for a specific bookmaker's market."""
+    bets = []
     game_label = f"{proj.home_team} vs {proj.away_team}"
 
-    for oc in spread_mkt.outcomes:
+    for oc in market.outcomes:
         if oc.point is None:
             continue
 
-        # Determine if this is home or away spread
-        if oc.name == odds.home_team:
-            # Home spread: book says home wins by -point (e.g. -3.5 means home favored by 3.5)
-            # Our model spread: away_pts - home_pts (negative = home favored)
-            # P(home covers) = P(actual_margin > -spread_line)
-            # where actual_margin = home_pts - away_pts
+        if oc.name == game_odds.home_team:
             model_margin = proj.home_pts - proj.away_pts
-            book_margin = -oc.point  # flip sign: if line is -3.5, team needs to win by 3.5
+            book_margin = -oc.point
             model_prob = compute_model_win_prob(model_margin, book_margin, proj.spread_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
             edge_pts = model_margin - book_margin
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="spread",
                 bet_side="home",
@@ -102,16 +142,23 @@ def _analyze_spread(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model: {proj.home_team} by {model_margin:.1f}, book: {oc.point}",
-            ))
-        elif oc.name == odds.away_team:
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
+
+        elif oc.name == game_odds.away_team:
             model_margin = proj.away_pts - proj.home_pts
             book_margin = -oc.point
             model_prob = compute_model_win_prob(model_margin, book_margin, proj.spread_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
             edge_pts = model_margin - book_margin
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="spread",
                 bet_side="away",
@@ -125,35 +172,38 @@ def _analyze_spread(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model: {proj.away_team} by {model_margin:.1f}, book: {oc.point}",
-            ))
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
 
     return bets
 
 
-def _analyze_total(
+def _analyze_total_for_book(
     proj: MatchupProjection,
-    odds: GameOdds,
+    game_odds: GameOdds,
+    bookmaker_title: str,
+    market: OddsMarket,
 ) -> List[BetOpportunity]:
-    """Analyze over/under total bets."""
+    """Analyze over/under total bets for a specific bookmaker's market."""
     bets = []
-    total_mkt = odds.get_consensus_line("totals")
-    if not total_mkt:
-        return bets
-
     game_label = f"{proj.home_team} vs {proj.away_team}"
 
-    for oc in total_mkt.outcomes:
+    for oc in market.outcomes:
         if oc.point is None:
             continue
 
         if oc.name == "Over":
-            # P(actual_total > book_total)
             model_prob = compute_model_win_prob(proj.proj_total, oc.point, proj.total_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
             edge_pts = proj.proj_total - oc.point
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="total",
                 bet_side="over",
@@ -167,15 +217,21 @@ def _analyze_total(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model total: {proj.proj_total:.1f}, book: {oc.point}",
-            ))
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
+
         elif oc.name == "Under":
-            # P(actual_total < book_total)
             model_prob = 1.0 - compute_model_win_prob(proj.proj_total, oc.point, proj.total_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
             edge_pts = oc.point - proj.proj_total
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="total",
                 bet_side="under",
@@ -189,32 +245,35 @@ def _analyze_total(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model total: {proj.proj_total:.1f}, book: {oc.point}",
-            ))
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
 
     return bets
 
 
-def _analyze_moneyline(
+def _analyze_moneyline_for_book(
     proj: MatchupProjection,
-    odds: GameOdds,
+    game_odds: GameOdds,
+    bookmaker_title: str,
+    market: OddsMarket,
 ) -> List[BetOpportunity]:
-    """Analyze moneyline (h2h) bets."""
+    """Analyze moneyline (h2h) bets for a specific bookmaker's market."""
     bets = []
-    ml_mkt = odds.get_consensus_line("h2h")
-    if not ml_mkt:
-        return bets
-
     game_label = f"{proj.home_team} vs {proj.away_team}"
 
-    for oc in ml_mkt.outcomes:
-        if oc.name == odds.home_team:
-            # P(home wins) = P(home_pts > away_pts)
+    for oc in market.outcomes:
+        if oc.name == game_odds.home_team:
             model_margin = proj.home_pts - proj.away_pts
             model_prob = compute_model_win_prob(model_margin, 0, proj.spread_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="moneyline",
                 bet_side="home",
@@ -228,14 +287,21 @@ def _analyze_moneyline(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model: {proj.home_team} win prob {model_prob:.1%}, book implied: {implied:.1%}",
-            ))
-        elif oc.name == odds.away_team:
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
+
+        elif oc.name == game_odds.away_team:
             model_margin = proj.away_pts - proj.home_pts
             model_prob = compute_model_win_prob(model_margin, 0, proj.spread_std)
             implied = american_to_implied_prob(oc.price)
             edge = model_prob - implied
+            preferred = _is_preferred_range(oc.price)
 
-            bets.append(BetOpportunity(
+            bet = BetOpportunity(
                 game=game_label,
                 bet_type="moneyline",
                 bet_side="away",
@@ -249,7 +315,12 @@ def _analyze_moneyline(
                 confidence=_confidence(edge),
                 category="",
                 reasoning=f"Model: {proj.away_team} win prob {model_prob:.1%}, book implied: {implied:.1%}",
-            ))
+                bookmaker=bookmaker_title,
+                kelly_fraction=compute_kelly_fraction(model_prob, oc.price),
+                in_preferred_range=preferred,
+            )
+            bet.safety_score = compute_safety_score(bet)
+            bets.append(bet)
 
     return bets
 
@@ -269,16 +340,53 @@ def analyze_game_value(
     game_odds: GameOdds,
 ) -> List[BetOpportunity]:
     """
-    Analyze all available markets for a single game.
-    Returns all bet opportunities sorted by edge_pct descending.
+    Analyze all available markets for a single game (consensus/first book only).
+    Returns all bet opportunities sorted by safety_score descending.
     """
     bets = []
-    bets.extend(_analyze_spread(projection, game_odds))
-    bets.extend(_analyze_total(projection, game_odds))
-    bets.extend(_analyze_moneyline(projection, game_odds))
+    # Use consensus (first book) for backwards compatibility
+    for market_key, analyzer in [
+        ("spreads", _analyze_spread_for_book),
+        ("totals", _analyze_total_for_book),
+        ("h2h", _analyze_moneyline_for_book),
+    ]:
+        mkt = game_odds.get_consensus_line(market_key)
+        if mkt:
+            # Find the bookmaker title for consensus
+            title = ""
+            for bk in game_odds.bookmakers:
+                for m in bk.markets:
+                    if m is mkt:
+                        title = bk.title
+                        break
+                if title:
+                    break
+            bets.extend(analyzer(projection, game_odds, title, mkt))
 
-    # Sort by edge_pct descending
-    bets.sort(key=lambda b: b.edge_pct, reverse=True)
+    bets.sort(key=lambda b: b.safety_score, reverse=True)
+    return bets
+
+
+def analyze_game_value_all_books(
+    projection: MatchupProjection,
+    game_odds: GameOdds,
+) -> List[BetOpportunity]:
+    """
+    Analyze every bookmaker's lines for a single game.
+    Returns all bet opportunities across all books, sorted by safety_score.
+    """
+    bets = []
+
+    for market_key, analyzer in [
+        ("spreads", _analyze_spread_for_book),
+        ("totals", _analyze_total_for_book),
+        ("h2h", _analyze_moneyline_for_book),
+    ]:
+        book_lines = game_odds.get_all_book_lines(market_key)
+        for bookmaker_title, market in book_lines:
+            bets.extend(analyzer(projection, game_odds, bookmaker_title, market))
+
+    bets.sort(key=lambda b: b.safety_score, reverse=True)
     return bets
 
 
@@ -289,20 +397,28 @@ def select_best_bets(
     """
     Select the best bets across all games.
 
-    Returns up to top_n * 2 bets: per game, pick a:
-    - Safe bet: highest model_win_prob (most likely to win)
-    - Value bet: highest edge_pct that differs from safe bet (where books are most wrong)
+    Deduplicates per (game, bet_type, bet_side) keeping the highest safety_score.
+    Then sorts by safety_score and returns up to top_n * 2.
     """
+    # Deduplicate: keep best safety_score per (game, type, side)
+    best_per_key: dict[tuple, BetOpportunity] = {}
+    for bet in all_opportunities:
+        key = (bet.game, bet.bet_type, bet.bet_side)
+        if key not in best_per_key or bet.safety_score > best_per_key[key].safety_score:
+            best_per_key[key] = bet
+
+    deduped = list(best_per_key.values())
+
     # Group by game
     games: dict[str, List[BetOpportunity]] = {}
-    for bet in all_opportunities:
+    for bet in deduped:
         games.setdefault(bet.game, []).append(bet)
 
-    # Score each game by its best edge
+    # Score each game by its best safety_score
     game_scores = []
     for game_label, bets in games.items():
-        best_edge = max(b.edge_pct for b in bets)
-        game_scores.append((best_edge, game_label))
+        best_safety = max(b.safety_score for b in bets)
+        game_scores.append((best_safety, game_label))
 
     game_scores.sort(reverse=True)
 
@@ -310,8 +426,8 @@ def select_best_bets(
     for _, game_label in game_scores[:top_n]:
         bets = games[game_label]
 
-        # Safe bet: highest model_win_prob
-        safe = max(bets, key=lambda b: b.model_win_prob)
+        # Safe bet: highest safety_score
+        safe = max(bets, key=lambda b: b.safety_score)
         safe.category = "safe"
         results.append(safe)
 
@@ -322,4 +438,6 @@ def select_best_bets(
             value.category = "value"
             results.append(value)
 
+    # Final sort by safety_score
+    results.sort(key=lambda b: b.safety_score, reverse=True)
     return results

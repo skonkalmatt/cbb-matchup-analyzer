@@ -6,12 +6,12 @@ Projects tempo, scoring, totals, and spreads using SOS-adjusted efficiency.
 
 import math
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Tuple
 
 from scripts.stats_builder import TeamSeasonProfile, LEAGUE_AVG_PPP
 
-# Home court advantage in PPP (~1 point per game at average tempo)
-HOME_COURT_PPP = 0.014
+# Home court advantage in PPP (~3.2 pts / 68 poss, empirical)
+HOME_COURT_PPP = 0.045
 
 
 @dataclass
@@ -42,6 +42,53 @@ class MatchupProjection:
     home_pts_std: float
     away_pts_std: float
 
+    # Win probability
+    home_win_prob: float = 0.0
+
+    # 90% confidence intervals
+    home_pts_ci_lo: float = 0.0
+    home_pts_ci_hi: float = 0.0
+    away_pts_ci_lo: float = 0.0
+    away_pts_ci_hi: float = 0.0
+    total_ci_lo: float = 0.0
+    total_ci_hi: float = 0.0
+    spread_ci_lo: float = 0.0
+    spread_ci_hi: float = 0.0
+
+
+def logistic_win_prob(spread: float, spread_std: float) -> float:
+    """Logistic win probability from projected spread.
+
+    Uses k=0.175 calibrated so an 11-pt spread yields ~87% win probability.
+    Fatter tails than normal CDF → more realistic upset rates.
+
+    Args:
+        spread: proj_spread (negative = home favored)
+        spread_std: standard deviation of spread estimate (unused in logistic
+                    but kept for API consistency; the k constant absorbs it)
+
+    Returns:
+        Home team win probability [0, 1].
+    """
+    k = 0.175
+    # spread is away_pts - home_pts; negative means home favored
+    # P(home wins) increases as spread becomes more negative
+    return 1.0 / (1.0 + math.exp(k * spread))
+
+
+def compute_confidence_intervals(
+    value: float, std: float, confidence: float = 0.90
+) -> Tuple[float, float]:
+    """Symmetric confidence interval using normal quantile.
+
+    Returns (lo, hi) such that P(lo <= X <= hi) = confidence.
+    """
+    # z for 90% CI = 1.645, 95% = 1.96
+    from scipy.stats import norm
+    alpha = 1.0 - confidence
+    z = norm.ppf(1.0 - alpha / 2.0)
+    return value - z * std, value + z * std
+
 
 def compute_adjusted_efficiency(
     profile: TeamSeasonProfile,
@@ -49,8 +96,8 @@ def compute_adjusted_efficiency(
 ) -> tuple[float, float]:
     """
     SOS-adjusted PPP.
-    - If opponents had tough defenses (low sos_def_ppp), our offense is understated → adjust up.
-    - If opponents had strong offenses (high sos_off_ppp), our defense is understated → adjust up.
+    - If opponents had tough defenses (low sos_def_ppp), our offense is understated -> adjust up.
+    - If opponents had strong offenses (high sos_off_ppp), our defense is understated -> adjust up.
 
     Returns (adj_off_ppp, adj_def_ppp).
     """
@@ -91,7 +138,7 @@ def project_ppp(
     3-component blend:
     1. Matchup PPP = adj_off + adj_def - league_avg (log5-style, 85% weight)
     2. Recent form = last-5-game off_ppp (15% weight)
-    3. Home court = +0.014 PPP if home team
+    3. Home court = +0.045 PPP if home team
     """
     adj_off, _ = compute_adjusted_efficiency(off_profile, league_avg)
     _, adj_def = compute_adjusted_efficiency(def_profile, league_avg)
@@ -135,11 +182,18 @@ def estimate_uncertainty(
     """
     Estimate uncertainty (std devs) from historical scoring variance.
 
+    Applies a game-count penalty: sqrt(30/n) widens uncertainty when a team
+    has played fewer than 30 games.
+
     Returns (total_std, spread_std, home_pts_std, away_pts_std).
     Floors: 10 for total, 6 for team total.
     """
-    home_pts_std = max(home.pts_for_std, 6.0)
-    away_pts_std = max(away.pts_for_std, 6.0)
+    # Game-count penalty: fewer games → wider uncertainty
+    home_penalty = math.sqrt(30.0 / max(home.games_played, 1))
+    away_penalty = math.sqrt(30.0 / max(away.games_played, 1))
+
+    home_pts_std = max(home.pts_for_std * home_penalty, 6.0)
+    away_pts_std = max(away.pts_for_std * away_penalty, 6.0)
 
     # Total std: combined variance of both teams' scoring
     total_std = max(math.sqrt(home_pts_std**2 + away_pts_std**2), 10.0)
@@ -155,7 +209,8 @@ def project_matchup(
     away: TeamSeasonProfile,
 ) -> MatchupProjection:
     """
-    Full matchup projection: tempo, scoring, totals, spread, FTA, uncertainty.
+    Full matchup projection: tempo, scoring, totals, spread, FTA, uncertainty,
+    win probability, and 90% confidence intervals.
     """
     tempo = project_tempo(home, away)
 
@@ -173,6 +228,15 @@ def project_matchup(
 
     total_std, spread_std, home_pts_std, away_pts_std = estimate_uncertainty(home, away)
 
+    # Win probability via logistic model
+    home_win_prob = logistic_win_prob(proj_spread, spread_std)
+
+    # 90% confidence intervals
+    home_pts_ci_lo, home_pts_ci_hi = compute_confidence_intervals(home_pts, home_pts_std)
+    away_pts_ci_lo, away_pts_ci_hi = compute_confidence_intervals(away_pts, away_pts_std)
+    total_ci_lo, total_ci_hi = compute_confidence_intervals(proj_total, total_std)
+    spread_ci_lo, spread_ci_hi = compute_confidence_intervals(proj_spread, spread_std)
+
     return MatchupProjection(
         home_team=home.team,
         away_team=away.team,
@@ -189,4 +253,13 @@ def project_matchup(
         spread_std=spread_std,
         home_pts_std=home_pts_std,
         away_pts_std=away_pts_std,
+        home_win_prob=home_win_prob,
+        home_pts_ci_lo=home_pts_ci_lo,
+        home_pts_ci_hi=home_pts_ci_hi,
+        away_pts_ci_lo=away_pts_ci_lo,
+        away_pts_ci_hi=away_pts_ci_hi,
+        total_ci_lo=total_ci_lo,
+        total_ci_hi=total_ci_hi,
+        spread_ci_lo=spread_ci_lo,
+        spread_ci_hi=spread_ci_hi,
     )
