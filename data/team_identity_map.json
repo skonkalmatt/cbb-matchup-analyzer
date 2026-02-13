@@ -1,0 +1,2898 @@
+{
+  "Abilene Christian Wildcats": {
+    "espn_id": "2000",
+    "display_name": "Abilene Christian Wildcats",
+    "short_display_name": "Abilene Chrstn",
+    "location": "Abilene Christian",
+    "abbreviation": "ACU",
+    "nickname": "Abilene Chrstn"
+  },
+  "Air Force Falcons": {
+    "espn_id": "2005",
+    "display_name": "Air Force Falcons",
+    "short_display_name": "Air Force",
+    "location": "Air Force",
+    "abbreviation": "AF",
+    "nickname": "Air Force"
+  },
+  "Akron Zips": {
+    "espn_id": "2006",
+    "display_name": "Akron Zips",
+    "short_display_name": "Akron",
+    "location": "Akron",
+    "abbreviation": "AKR",
+    "nickname": "Akron"
+  },
+  "Alabama A&M Bulldogs": {
+    "espn_id": "2010",
+    "display_name": "Alabama A&M Bulldogs",
+    "short_display_name": "Alabama A&M",
+    "location": "Alabama A&M",
+    "abbreviation": "AAMU",
+    "nickname": "Alabama A&M"
+  },
+  "Alabama Crimson Tide": {
+    "espn_id": "333",
+    "display_name": "Alabama Crimson Tide",
+    "short_display_name": "Alabama",
+    "location": "Alabama",
+    "abbreviation": "ALA",
+    "nickname": "Alabama"
+  },
+  "Alabama State Hornets": {
+    "espn_id": "2011",
+    "display_name": "Alabama State Hornets",
+    "short_display_name": "Alabama St",
+    "location": "Alabama State",
+    "abbreviation": "ALST",
+    "nickname": "Alabama St"
+  },
+  "Alcorn State Braves": {
+    "espn_id": "2016",
+    "display_name": "Alcorn State Braves",
+    "short_display_name": "Alcorn St",
+    "location": "Alcorn State",
+    "abbreviation": "ALCN",
+    "nickname": "Alcorn St"
+  },
+  "American University Eagles": {
+    "espn_id": "44",
+    "display_name": "American University Eagles",
+    "short_display_name": "American",
+    "location": "American University",
+    "abbreviation": "AMER",
+    "nickname": "American"
+  },
+  "App State Mountaineers": {
+    "espn_id": "2026",
+    "display_name": "App State Mountaineers",
+    "short_display_name": "App State",
+    "location": "App State",
+    "abbreviation": "APP",
+    "nickname": "App State"
+  },
+  "Arizona State Sun Devils": {
+    "espn_id": "9",
+    "display_name": "Arizona State Sun Devils",
+    "short_display_name": "Arizona St",
+    "location": "Arizona State",
+    "abbreviation": "ASU",
+    "nickname": "Arizona St"
+  },
+  "Arizona Wildcats": {
+    "espn_id": "12",
+    "display_name": "Arizona Wildcats",
+    "short_display_name": "Arizona",
+    "location": "Arizona",
+    "abbreviation": "ARIZ",
+    "nickname": "Arizona"
+  },
+  "Arkansas Razorbacks": {
+    "espn_id": "8",
+    "display_name": "Arkansas Razorbacks",
+    "short_display_name": "Arkansas",
+    "location": "Arkansas",
+    "abbreviation": "ARK",
+    "nickname": "Arkansas"
+  },
+  "Arkansas State Red Wolves": {
+    "espn_id": "2032",
+    "display_name": "Arkansas State Red Wolves",
+    "short_display_name": "Arkansas St",
+    "location": "Arkansas State",
+    "abbreviation": "ARST",
+    "nickname": "Arkansas St"
+  },
+  "Arkansas-Pine Bluff Golden Lions": {
+    "espn_id": "2029",
+    "display_name": "Arkansas-Pine Bluff Golden Lions",
+    "short_display_name": "AR-Pine Bluff",
+    "location": "Arkansas-Pine Bluff",
+    "abbreviation": "UAPB",
+    "nickname": "AR-Pine Bluff"
+  },
+  "Army Black Knights": {
+    "espn_id": "349",
+    "display_name": "Army Black Knights",
+    "short_display_name": "Army",
+    "location": "Army",
+    "abbreviation": "ARMY",
+    "nickname": "Army"
+  },
+  "Auburn Tigers": {
+    "espn_id": "2",
+    "display_name": "Auburn Tigers",
+    "short_display_name": "Auburn",
+    "location": "Auburn",
+    "abbreviation": "AUB",
+    "nickname": "Auburn"
+  },
+  "Austin Peay Governors": {
+    "espn_id": "2046",
+    "display_name": "Austin Peay Governors",
+    "short_display_name": "Austin Peay",
+    "location": "Austin Peay",
+    "abbreviation": "APSU",
+    "nickname": "Austin Peay"
+  },
+  "BYU Cougars": {
+    "espn_id": "252",
+    "display_name": "BYU Cougars",
+    "short_display_name": "BYU",
+    "location": "BYU",
+    "abbreviation": "BYU",
+    "nickname": "BYU"
+  },
+  "Ball State Cardinals": {
+    "espn_id": "2050",
+    "display_name": "Ball State Cardinals",
+    "short_display_name": "Ball State",
+    "location": "Ball State",
+    "abbreviation": "BALL",
+    "nickname": "Ball State"
+  },
+  "Baylor Bears": {
+    "espn_id": "239",
+    "display_name": "Baylor Bears",
+    "short_display_name": "Baylor",
+    "location": "Baylor",
+    "abbreviation": "BAY",
+    "nickname": "Baylor"
+  },
+  "Bellarmine Knights": {
+    "espn_id": "91",
+    "display_name": "Bellarmine Knights",
+    "short_display_name": "Bellarmine",
+    "location": "Bellarmine",
+    "abbreviation": "BELL",
+    "nickname": "Bellarmine"
+  },
+  "Belmont Bruins": {
+    "espn_id": "2057",
+    "display_name": "Belmont Bruins",
+    "short_display_name": "Belmont",
+    "location": "Belmont",
+    "abbreviation": "BEL",
+    "nickname": "Belmont"
+  },
+  "Bethune-Cookman Wildcats": {
+    "espn_id": "2065",
+    "display_name": "Bethune-Cookman Wildcats",
+    "short_display_name": "Bethune",
+    "location": "Bethune-Cookman",
+    "abbreviation": "BCU",
+    "nickname": "Bethune"
+  },
+  "Binghamton Bearcats": {
+    "espn_id": "2066",
+    "display_name": "Binghamton Bearcats",
+    "short_display_name": "Binghamton",
+    "location": "Binghamton",
+    "abbreviation": "BING",
+    "nickname": "Binghamton"
+  },
+  "Boise State Broncos": {
+    "espn_id": "68",
+    "display_name": "Boise State Broncos",
+    "short_display_name": "Boise St",
+    "location": "Boise State",
+    "abbreviation": "BOIS",
+    "nickname": "Boise St"
+  },
+  "Boston College Eagles": {
+    "espn_id": "103",
+    "display_name": "Boston College Eagles",
+    "short_display_name": "Boston College",
+    "location": "Boston College",
+    "abbreviation": "BC",
+    "nickname": "Boston College"
+  },
+  "Boston University Terriers": {
+    "espn_id": "104",
+    "display_name": "Boston University Terriers",
+    "short_display_name": "Boston U",
+    "location": "Boston University",
+    "abbreviation": "BU",
+    "nickname": "Boston U"
+  },
+  "Bowling Green Falcons": {
+    "espn_id": "189",
+    "display_name": "Bowling Green Falcons",
+    "short_display_name": "Bowling Green",
+    "location": "Bowling Green",
+    "abbreviation": "BGSU",
+    "nickname": "Bowling Green"
+  },
+  "Bradley Braves": {
+    "espn_id": "71",
+    "display_name": "Bradley Braves",
+    "short_display_name": "Bradley",
+    "location": "Bradley",
+    "abbreviation": "BRAD",
+    "nickname": "Bradley"
+  },
+  "Brown Bears": {
+    "espn_id": "225",
+    "display_name": "Brown Bears",
+    "short_display_name": "Brown",
+    "location": "Brown",
+    "abbreviation": "BRWN",
+    "nickname": "Brown"
+  },
+  "Bryant Bulldogs": {
+    "espn_id": "2803",
+    "display_name": "Bryant Bulldogs",
+    "short_display_name": "Bryant",
+    "location": "Bryant",
+    "abbreviation": "BRY",
+    "nickname": "Bryant"
+  },
+  "Bucknell Bison": {
+    "espn_id": "2083",
+    "display_name": "Bucknell Bison",
+    "short_display_name": "Bucknell",
+    "location": "Bucknell",
+    "abbreviation": "BUCK",
+    "nickname": "Bucknell"
+  },
+  "Buffalo Bulls": {
+    "espn_id": "2084",
+    "display_name": "Buffalo Bulls",
+    "short_display_name": "Buffalo",
+    "location": "Buffalo",
+    "abbreviation": "BUF",
+    "nickname": "Buffalo"
+  },
+  "Butler Bulldogs": {
+    "espn_id": "2086",
+    "display_name": "Butler Bulldogs",
+    "short_display_name": "Butler",
+    "location": "Butler",
+    "abbreviation": "BUT",
+    "nickname": "Butler"
+  },
+  "Cal Poly Mustangs": {
+    "espn_id": "13",
+    "display_name": "Cal Poly Mustangs",
+    "short_display_name": "Cal Poly",
+    "location": "Cal Poly",
+    "abbreviation": "CP",
+    "nickname": "Cal Poly"
+  },
+  "Cal State Bakersfield Roadrunners": {
+    "espn_id": "2934",
+    "display_name": "Cal State Bakersfield Roadrunners",
+    "short_display_name": "Bakersfield",
+    "location": "Cal State Bakersfield",
+    "abbreviation": "CSUB",
+    "nickname": "Bakersfield"
+  },
+  "Cal State Fullerton Titans": {
+    "espn_id": "2239",
+    "display_name": "Cal State Fullerton Titans",
+    "short_display_name": "Fullerton",
+    "location": "Cal State Fullerton",
+    "abbreviation": "CSUF",
+    "nickname": "Fullerton"
+  },
+  "Cal State Northridge Matadors": {
+    "espn_id": "2463",
+    "display_name": "Cal State Northridge Matadors",
+    "short_display_name": "CSU Northridge",
+    "location": "Cal State Northridge",
+    "abbreviation": "CSUN",
+    "nickname": "CSU Northridge"
+  },
+  "California Baptist Lancers": {
+    "espn_id": "2856",
+    "display_name": "California Baptist Lancers",
+    "short_display_name": "CA Baptist",
+    "location": "California Baptist",
+    "abbreviation": "CBU",
+    "nickname": "CA Baptist"
+  },
+  "California Golden Bears": {
+    "espn_id": "25",
+    "display_name": "California Golden Bears",
+    "short_display_name": "California",
+    "location": "California",
+    "abbreviation": "CAL",
+    "nickname": "California"
+  },
+  "Campbell Fighting Camels": {
+    "espn_id": "2097",
+    "display_name": "Campbell Fighting Camels",
+    "short_display_name": "Campbell",
+    "location": "Campbell",
+    "abbreviation": "CAM",
+    "nickname": "Campbell"
+  },
+  "Canisius Golden Griffins": {
+    "espn_id": "2099",
+    "display_name": "Canisius Golden Griffins",
+    "short_display_name": "Canisius",
+    "location": "Canisius",
+    "abbreviation": "CAN",
+    "nickname": "Canisius"
+  },
+  "Central Arkansas Bears": {
+    "espn_id": "2110",
+    "display_name": "Central Arkansas Bears",
+    "short_display_name": "C Arkansas",
+    "location": "Central Arkansas",
+    "abbreviation": "CARK",
+    "nickname": "C Arkansas"
+  },
+  "Central Connecticut Blue Devils": {
+    "espn_id": "2115",
+    "display_name": "Central Connecticut Blue Devils",
+    "short_display_name": "C Connecticut",
+    "location": "Central Connecticut",
+    "abbreviation": "CCSU",
+    "nickname": "C Connecticut"
+  },
+  "Central Michigan Chippewas": {
+    "espn_id": "2117",
+    "display_name": "Central Michigan Chippewas",
+    "short_display_name": "C Michigan",
+    "location": "Central Michigan",
+    "abbreviation": "CMU",
+    "nickname": "C Michigan"
+  },
+  "Charleston Cougars": {
+    "espn_id": "232",
+    "display_name": "Charleston Cougars",
+    "short_display_name": "Charleston",
+    "location": "Charleston",
+    "abbreviation": "COFC",
+    "nickname": "Charleston"
+  },
+  "Charleston Southern Buccaneers": {
+    "espn_id": "2127",
+    "display_name": "Charleston Southern Buccaneers",
+    "short_display_name": "Charleston So",
+    "location": "Charleston Southern",
+    "abbreviation": "CHSO",
+    "nickname": "Charleston So"
+  },
+  "Charlotte 49ers": {
+    "espn_id": "2429",
+    "display_name": "Charlotte 49ers",
+    "short_display_name": "Charlotte",
+    "location": "Charlotte",
+    "abbreviation": "CLT",
+    "nickname": "Charlotte"
+  },
+  "Chattanooga Mocs": {
+    "espn_id": "236",
+    "display_name": "Chattanooga Mocs",
+    "short_display_name": "Chattanooga",
+    "location": "Chattanooga",
+    "abbreviation": "UTC",
+    "nickname": "Chattanooga"
+  },
+  "Chicago State Cougars": {
+    "espn_id": "2130",
+    "display_name": "Chicago State Cougars",
+    "short_display_name": "Chicago St",
+    "location": "Chicago State",
+    "abbreviation": "CHST",
+    "nickname": "Chicago St"
+  },
+  "Cincinnati Bearcats": {
+    "espn_id": "2132",
+    "display_name": "Cincinnati Bearcats",
+    "short_display_name": "Cincinnati",
+    "location": "Cincinnati",
+    "abbreviation": "CIN",
+    "nickname": "Cincinnati"
+  },
+  "Clemson Tigers": {
+    "espn_id": "228",
+    "display_name": "Clemson Tigers",
+    "short_display_name": "Clemson",
+    "location": "Clemson",
+    "abbreviation": "CLEM",
+    "nickname": "Clemson"
+  },
+  "Cleveland State Vikings": {
+    "espn_id": "325",
+    "display_name": "Cleveland State Vikings",
+    "short_display_name": "Cleveland St",
+    "location": "Cleveland State",
+    "abbreviation": "CLE",
+    "nickname": "Cleveland St"
+  },
+  "Coastal Carolina Chanticleers": {
+    "espn_id": "324",
+    "display_name": "Coastal Carolina Chanticleers",
+    "short_display_name": "Coastal",
+    "location": "Coastal Carolina",
+    "abbreviation": "CCU",
+    "nickname": "Coastal"
+  },
+  "Colgate Raiders": {
+    "espn_id": "2142",
+    "display_name": "Colgate Raiders",
+    "short_display_name": "Colgate",
+    "location": "Colgate",
+    "abbreviation": "COLG",
+    "nickname": "Colgate"
+  },
+  "Colorado Buffaloes": {
+    "espn_id": "38",
+    "display_name": "Colorado Buffaloes",
+    "short_display_name": "Colorado",
+    "location": "Colorado",
+    "abbreviation": "COLO",
+    "nickname": "Colorado"
+  },
+  "Colorado State Rams": {
+    "espn_id": "36",
+    "display_name": "Colorado State Rams",
+    "short_display_name": "Colorado St",
+    "location": "Colorado State",
+    "abbreviation": "CSU",
+    "nickname": "Colorado St"
+  },
+  "Columbia Lions": {
+    "espn_id": "171",
+    "display_name": "Columbia Lions",
+    "short_display_name": "Columbia",
+    "location": "Columbia",
+    "abbreviation": "COLU",
+    "nickname": "Columbia"
+  },
+  "Coppin State Eagles": {
+    "espn_id": "2154",
+    "display_name": "Coppin State Eagles",
+    "short_display_name": "Coppin St",
+    "location": "Coppin State",
+    "abbreviation": "COPP",
+    "nickname": "Coppin St"
+  },
+  "Cornell Big Red": {
+    "espn_id": "172",
+    "display_name": "Cornell Big Red",
+    "short_display_name": "Cornell",
+    "location": "Cornell",
+    "abbreviation": "COR",
+    "nickname": "Cornell"
+  },
+  "Creighton Bluejays": {
+    "espn_id": "156",
+    "display_name": "Creighton Bluejays",
+    "short_display_name": "Creighton",
+    "location": "Creighton",
+    "abbreviation": "CREI",
+    "nickname": "Creighton"
+  },
+  "Dartmouth Big Green": {
+    "espn_id": "159",
+    "display_name": "Dartmouth Big Green",
+    "short_display_name": "Dartmouth",
+    "location": "Dartmouth",
+    "abbreviation": "DART",
+    "nickname": "Dartmouth"
+  },
+  "Davidson Wildcats": {
+    "espn_id": "2166",
+    "display_name": "Davidson Wildcats",
+    "short_display_name": "Davidson",
+    "location": "Davidson",
+    "abbreviation": "DAV",
+    "nickname": "Davidson"
+  },
+  "Dayton Flyers": {
+    "espn_id": "2168",
+    "display_name": "Dayton Flyers",
+    "short_display_name": "Dayton",
+    "location": "Dayton",
+    "abbreviation": "DAY",
+    "nickname": "Dayton"
+  },
+  "DePaul Blue Demons": {
+    "espn_id": "305",
+    "display_name": "DePaul Blue Demons",
+    "short_display_name": "DePaul",
+    "location": "DePaul",
+    "abbreviation": "DEP",
+    "nickname": "DePaul"
+  },
+  "Delaware Blue Hens": {
+    "espn_id": "48",
+    "display_name": "Delaware Blue Hens",
+    "short_display_name": "Delaware",
+    "location": "Delaware",
+    "abbreviation": "DEL",
+    "nickname": "Delaware"
+  },
+  "Delaware State Hornets": {
+    "espn_id": "2169",
+    "display_name": "Delaware State Hornets",
+    "short_display_name": "Delaware St",
+    "location": "Delaware State",
+    "abbreviation": "DSU",
+    "nickname": "Delaware St"
+  },
+  "Denver Pioneers": {
+    "espn_id": "2172",
+    "display_name": "Denver Pioneers",
+    "short_display_name": "Denver",
+    "location": "Denver",
+    "abbreviation": "DEN",
+    "nickname": "Denver"
+  },
+  "Detroit Mercy Titans": {
+    "espn_id": "2174",
+    "display_name": "Detroit Mercy Titans",
+    "short_display_name": "Detroit Mercy",
+    "location": "Detroit Mercy",
+    "abbreviation": "DETM",
+    "nickname": "Detroit Mercy"
+  },
+  "Drake Bulldogs": {
+    "espn_id": "2181",
+    "display_name": "Drake Bulldogs",
+    "short_display_name": "Drake",
+    "location": "Drake",
+    "abbreviation": "DRKE",
+    "nickname": "Drake"
+  },
+  "Drexel Dragons": {
+    "espn_id": "2182",
+    "display_name": "Drexel Dragons",
+    "short_display_name": "Drexel",
+    "location": "Drexel",
+    "abbreviation": "DREX",
+    "nickname": "Drexel"
+  },
+  "Duke Blue Devils": {
+    "espn_id": "150",
+    "display_name": "Duke Blue Devils",
+    "short_display_name": "Duke",
+    "location": "Duke",
+    "abbreviation": "DUKE",
+    "nickname": "Duke"
+  },
+  "Duquesne Dukes": {
+    "espn_id": "2184",
+    "display_name": "Duquesne Dukes",
+    "short_display_name": "Duquesne",
+    "location": "Duquesne",
+    "abbreviation": "DUQ",
+    "nickname": "Duquesne"
+  },
+  "East Carolina Pirates": {
+    "espn_id": "151",
+    "display_name": "East Carolina Pirates",
+    "short_display_name": "East Carolina",
+    "location": "East Carolina",
+    "abbreviation": "ECU",
+    "nickname": "East Carolina"
+  },
+  "East Tennessee State Buccaneers": {
+    "espn_id": "2193",
+    "display_name": "East Tennessee State Buccaneers",
+    "short_display_name": "ETSU",
+    "location": "East Tennessee State",
+    "abbreviation": "ETSU",
+    "nickname": "ETSU"
+  },
+  "East Texas A&M Lions": {
+    "espn_id": "2837",
+    "display_name": "East Texas A&M Lions",
+    "short_display_name": "E Texas A&M",
+    "location": "East Texas A&M",
+    "abbreviation": "ETAM",
+    "nickname": "E Texas A&M"
+  },
+  "Eastern Illinois Panthers": {
+    "espn_id": "2197",
+    "display_name": "Eastern Illinois Panthers",
+    "short_display_name": "E Illinois",
+    "location": "Eastern Illinois",
+    "abbreviation": "EIU",
+    "nickname": "E Illinois"
+  },
+  "Eastern Kentucky Colonels": {
+    "espn_id": "2198",
+    "display_name": "Eastern Kentucky Colonels",
+    "short_display_name": "E Kentucky",
+    "location": "Eastern Kentucky",
+    "abbreviation": "EKU",
+    "nickname": "E Kentucky"
+  },
+  "Eastern Michigan Eagles": {
+    "espn_id": "2199",
+    "display_name": "Eastern Michigan Eagles",
+    "short_display_name": "E Michigan",
+    "location": "Eastern Michigan",
+    "abbreviation": "EMU",
+    "nickname": "E Michigan"
+  },
+  "Eastern Washington Eagles": {
+    "espn_id": "331",
+    "display_name": "Eastern Washington Eagles",
+    "short_display_name": "E Washington",
+    "location": "Eastern Washington",
+    "abbreviation": "EWU",
+    "nickname": "E Washington"
+  },
+  "Elon Phoenix": {
+    "espn_id": "2210",
+    "display_name": "Elon Phoenix",
+    "short_display_name": "Elon",
+    "location": "Elon",
+    "abbreviation": "ELON",
+    "nickname": "Elon"
+  },
+  "Evansville Purple Aces": {
+    "espn_id": "339",
+    "display_name": "Evansville Purple Aces",
+    "short_display_name": "Evansville",
+    "location": "Evansville",
+    "abbreviation": "EVAN",
+    "nickname": "Evansville"
+  },
+  "Fairfield Stags": {
+    "espn_id": "2217",
+    "display_name": "Fairfield Stags",
+    "short_display_name": "Fairfield",
+    "location": "Fairfield",
+    "abbreviation": "FAIR",
+    "nickname": "Fairfield"
+  },
+  "Fairleigh Dickinson Knights": {
+    "espn_id": "161",
+    "display_name": "Fairleigh Dickinson Knights",
+    "short_display_name": "FDU",
+    "location": "Fairleigh Dickinson",
+    "abbreviation": "FDU",
+    "nickname": "FDU"
+  },
+  "Florida A&M Rattlers": {
+    "espn_id": "50",
+    "display_name": "Florida A&M Rattlers",
+    "short_display_name": "Florida A&M",
+    "location": "Florida A&M",
+    "abbreviation": "FAMU",
+    "nickname": "Florida A&M"
+  },
+  "Florida Atlantic Owls": {
+    "espn_id": "2226",
+    "display_name": "Florida Atlantic Owls",
+    "short_display_name": "FAU",
+    "location": "Florida Atlantic",
+    "abbreviation": "FAU",
+    "nickname": "FAU"
+  },
+  "Florida Gators": {
+    "espn_id": "57",
+    "display_name": "Florida Gators",
+    "short_display_name": "Florida",
+    "location": "Florida",
+    "abbreviation": "FLA",
+    "nickname": "Florida"
+  },
+  "Florida Gulf Coast Eagles": {
+    "espn_id": "526",
+    "display_name": "Florida Gulf Coast Eagles",
+    "short_display_name": "FGCU",
+    "location": "Florida Gulf Coast",
+    "abbreviation": "FGCU",
+    "nickname": "FGCU"
+  },
+  "Florida International Panthers": {
+    "espn_id": "2229",
+    "display_name": "Florida International Panthers",
+    "short_display_name": "FIU",
+    "location": "Florida International",
+    "abbreviation": "FIU",
+    "nickname": "FIU"
+  },
+  "Florida State Seminoles": {
+    "espn_id": "52",
+    "display_name": "Florida State Seminoles",
+    "short_display_name": "Florida St",
+    "location": "Florida State",
+    "abbreviation": "FSU",
+    "nickname": "Florida St"
+  },
+  "Fordham Rams": {
+    "espn_id": "2230",
+    "display_name": "Fordham Rams",
+    "short_display_name": "Fordham",
+    "location": "Fordham",
+    "abbreviation": "FOR",
+    "nickname": "Fordham"
+  },
+  "Fresno State Bulldogs": {
+    "espn_id": "278",
+    "display_name": "Fresno State Bulldogs",
+    "short_display_name": "Fresno St",
+    "location": "Fresno State",
+    "abbreviation": "FRES",
+    "nickname": "Fresno St"
+  },
+  "Furman Paladins": {
+    "espn_id": "231",
+    "display_name": "Furman Paladins",
+    "short_display_name": "Furman",
+    "location": "Furman",
+    "abbreviation": "FUR",
+    "nickname": "Furman"
+  },
+  "Gardner-Webb Runnin' Bulldogs": {
+    "espn_id": "2241",
+    "display_name": "Gardner-Webb Runnin' Bulldogs",
+    "short_display_name": "Gardner-Webb",
+    "location": "Gardner-Webb",
+    "abbreviation": "GWEB",
+    "nickname": "Gardner-Webb"
+  },
+  "George Mason Patriots": {
+    "espn_id": "2244",
+    "display_name": "George Mason Patriots",
+    "short_display_name": "George Mason",
+    "location": "George Mason",
+    "abbreviation": "GMU",
+    "nickname": "George Mason"
+  },
+  "George Washington Revolutionaries": {
+    "espn_id": "45",
+    "display_name": "George Washington Revolutionaries",
+    "short_display_name": "G Washington",
+    "location": "George Washington",
+    "abbreviation": "GW",
+    "nickname": "G Washington"
+  },
+  "Georgetown Hoyas": {
+    "espn_id": "46",
+    "display_name": "Georgetown Hoyas",
+    "short_display_name": "Georgetown",
+    "location": "Georgetown",
+    "abbreviation": "GTWN",
+    "nickname": "Georgetown"
+  },
+  "Georgia Bulldogs": {
+    "espn_id": "61",
+    "display_name": "Georgia Bulldogs",
+    "short_display_name": "Georgia",
+    "location": "Georgia",
+    "abbreviation": "UGA",
+    "nickname": "Georgia"
+  },
+  "Georgia Southern Eagles": {
+    "espn_id": "290",
+    "display_name": "Georgia Southern Eagles",
+    "short_display_name": "GA Southern",
+    "location": "Georgia Southern",
+    "abbreviation": "GASO",
+    "nickname": "GA Southern"
+  },
+  "Georgia State Panthers": {
+    "espn_id": "2247",
+    "display_name": "Georgia State Panthers",
+    "short_display_name": "Georgia St",
+    "location": "Georgia State",
+    "abbreviation": "GAST",
+    "nickname": "Georgia St"
+  },
+  "Georgia Tech Yellow Jackets": {
+    "espn_id": "59",
+    "display_name": "Georgia Tech Yellow Jackets",
+    "short_display_name": "Georgia Tech",
+    "location": "Georgia Tech",
+    "abbreviation": "GT",
+    "nickname": "Georgia Tech"
+  },
+  "Gonzaga Bulldogs": {
+    "espn_id": "2250",
+    "display_name": "Gonzaga Bulldogs",
+    "short_display_name": "Gonzaga",
+    "location": "Gonzaga",
+    "abbreviation": "GONZ",
+    "nickname": "Gonzaga"
+  },
+  "Grambling Tigers": {
+    "espn_id": "2755",
+    "display_name": "Grambling Tigers",
+    "short_display_name": "Grambling",
+    "location": "Grambling",
+    "abbreviation": "GRAM",
+    "nickname": "Grambling"
+  },
+  "Grand Canyon Lopes": {
+    "espn_id": "2253",
+    "display_name": "Grand Canyon Lopes",
+    "short_display_name": "Grand Canyon",
+    "location": "Grand Canyon",
+    "abbreviation": "GCU",
+    "nickname": "Grand Canyon"
+  },
+  "Green Bay Phoenix": {
+    "espn_id": "2739",
+    "display_name": "Green Bay Phoenix",
+    "short_display_name": "Green Bay",
+    "location": "Green Bay",
+    "abbreviation": "GB",
+    "nickname": "Green Bay"
+  },
+  "Hampton Pirates": {
+    "espn_id": "2261",
+    "display_name": "Hampton Pirates",
+    "short_display_name": "Hampton",
+    "location": "Hampton",
+    "abbreviation": "HAMP",
+    "nickname": "Hampton"
+  },
+  "Harvard Crimson": {
+    "espn_id": "108",
+    "display_name": "Harvard Crimson",
+    "short_display_name": "Harvard",
+    "location": "Harvard",
+    "abbreviation": "HARV",
+    "nickname": "Harvard"
+  },
+  "Hawai'i Rainbow Warriors": {
+    "espn_id": "62",
+    "display_name": "Hawai'i Rainbow Warriors",
+    "short_display_name": "Hawai\u2019i",
+    "location": "Hawai'i",
+    "abbreviation": "HAW",
+    "nickname": "Hawai\u2019i"
+  },
+  "High Point Panthers": {
+    "espn_id": "2272",
+    "display_name": "High Point Panthers",
+    "short_display_name": "High Point",
+    "location": "High Point",
+    "abbreviation": "HPU",
+    "nickname": "High Point"
+  },
+  "Hofstra Pride": {
+    "espn_id": "2275",
+    "display_name": "Hofstra Pride",
+    "short_display_name": "Hofstra",
+    "location": "Hofstra",
+    "abbreviation": "HOF",
+    "nickname": "Hofstra"
+  },
+  "Holy Cross Crusaders": {
+    "espn_id": "107",
+    "display_name": "Holy Cross Crusaders",
+    "short_display_name": "Holy Cross",
+    "location": "Holy Cross",
+    "abbreviation": "HC",
+    "nickname": "Holy Cross"
+  },
+  "Houston Christian Huskies": {
+    "espn_id": "2277",
+    "display_name": "Houston Christian Huskies",
+    "short_display_name": "Hou Christian",
+    "location": "Houston Christian",
+    "abbreviation": "HCU",
+    "nickname": "Hou Christian"
+  },
+  "Houston Cougars": {
+    "espn_id": "248",
+    "display_name": "Houston Cougars",
+    "short_display_name": "Houston",
+    "location": "Houston",
+    "abbreviation": "HOU",
+    "nickname": "Houston"
+  },
+  "Howard Bison": {
+    "espn_id": "47",
+    "display_name": "Howard Bison",
+    "short_display_name": "Howard",
+    "location": "Howard",
+    "abbreviation": "HOW",
+    "nickname": "Howard"
+  },
+  "IU Indianapolis Jaguars": {
+    "espn_id": "85",
+    "display_name": "IU Indianapolis Jaguars",
+    "short_display_name": "IU Indy",
+    "location": "IU Indianapolis",
+    "abbreviation": "IUIN",
+    "nickname": "IU Indy"
+  },
+  "Idaho State Bengals": {
+    "espn_id": "304",
+    "display_name": "Idaho State Bengals",
+    "short_display_name": "Idaho St",
+    "location": "Idaho State",
+    "abbreviation": "IDST",
+    "nickname": "Idaho St"
+  },
+  "Idaho Vandals": {
+    "espn_id": "70",
+    "display_name": "Idaho Vandals",
+    "short_display_name": "Idaho",
+    "location": "Idaho",
+    "abbreviation": "IDHO",
+    "nickname": "Idaho"
+  },
+  "Illinois Fighting Illini": {
+    "espn_id": "356",
+    "display_name": "Illinois Fighting Illini",
+    "short_display_name": "Illinois",
+    "location": "Illinois",
+    "abbreviation": "ILL",
+    "nickname": "Illinois"
+  },
+  "Illinois State Redbirds": {
+    "espn_id": "2287",
+    "display_name": "Illinois State Redbirds",
+    "short_display_name": "Illinois St",
+    "location": "Illinois State",
+    "abbreviation": "ILST",
+    "nickname": "Illinois St"
+  },
+  "Incarnate Word Cardinals": {
+    "espn_id": "2916",
+    "display_name": "Incarnate Word Cardinals",
+    "short_display_name": "Incarnate Word",
+    "location": "Incarnate Word",
+    "abbreviation": "UIW",
+    "nickname": "Incarnate Word"
+  },
+  "Indiana Hoosiers": {
+    "espn_id": "84",
+    "display_name": "Indiana Hoosiers",
+    "short_display_name": "Indiana",
+    "location": "Indiana",
+    "abbreviation": "IU",
+    "nickname": "Indiana"
+  },
+  "Indiana State Sycamores": {
+    "espn_id": "282",
+    "display_name": "Indiana State Sycamores",
+    "short_display_name": "Indiana St",
+    "location": "Indiana State",
+    "abbreviation": "INST",
+    "nickname": "Indiana St"
+  },
+  "Iona Gaels": {
+    "espn_id": "314",
+    "display_name": "Iona Gaels",
+    "short_display_name": "Iona",
+    "location": "Iona",
+    "abbreviation": "IONA",
+    "nickname": "Iona"
+  },
+  "Iowa Hawkeyes": {
+    "espn_id": "2294",
+    "display_name": "Iowa Hawkeyes",
+    "short_display_name": "Iowa",
+    "location": "Iowa",
+    "abbreviation": "IOWA",
+    "nickname": "Iowa"
+  },
+  "Iowa State Cyclones": {
+    "espn_id": "66",
+    "display_name": "Iowa State Cyclones",
+    "short_display_name": "Iowa State",
+    "location": "Iowa State",
+    "abbreviation": "ISU",
+    "nickname": "Iowa State"
+  },
+  "Jackson State Tigers": {
+    "espn_id": "2296",
+    "display_name": "Jackson State Tigers",
+    "short_display_name": "Jackson St",
+    "location": "Jackson State",
+    "abbreviation": "JKST",
+    "nickname": "Jackson St"
+  },
+  "Jacksonville Dolphins": {
+    "espn_id": "294",
+    "display_name": "Jacksonville Dolphins",
+    "short_display_name": "Jacksonville",
+    "location": "Jacksonville",
+    "abbreviation": "JAX",
+    "nickname": "Jacksonville"
+  },
+  "Jacksonville State Gamecocks": {
+    "espn_id": "55",
+    "display_name": "Jacksonville State Gamecocks",
+    "short_display_name": "Jax State",
+    "location": "Jacksonville State",
+    "abbreviation": "JXST",
+    "nickname": "Jax State"
+  },
+  "James Madison Dukes": {
+    "espn_id": "256",
+    "display_name": "James Madison Dukes",
+    "short_display_name": "James Madison",
+    "location": "James Madison",
+    "abbreviation": "JMU",
+    "nickname": "James Madison"
+  },
+  "Kansas City Roos": {
+    "espn_id": "140",
+    "display_name": "Kansas City Roos",
+    "short_display_name": "Kansas City",
+    "location": "Kansas City",
+    "abbreviation": "KC",
+    "nickname": "Kansas City"
+  },
+  "Kansas Jayhawks": {
+    "espn_id": "2305",
+    "display_name": "Kansas Jayhawks",
+    "short_display_name": "Kansas",
+    "location": "Kansas",
+    "abbreviation": "KU",
+    "nickname": "Kansas"
+  },
+  "Kansas State Wildcats": {
+    "espn_id": "2306",
+    "display_name": "Kansas State Wildcats",
+    "short_display_name": "Kansas St",
+    "location": "Kansas State",
+    "abbreviation": "KSU",
+    "nickname": "Kansas St"
+  },
+  "Kennesaw State Owls": {
+    "espn_id": "338",
+    "display_name": "Kennesaw State Owls",
+    "short_display_name": "Kennesaw St",
+    "location": "Kennesaw State",
+    "abbreviation": "KENN",
+    "nickname": "Kennesaw St"
+  },
+  "Kent State Golden Flashes": {
+    "espn_id": "2309",
+    "display_name": "Kent State Golden Flashes",
+    "short_display_name": "Kent State",
+    "location": "Kent State",
+    "abbreviation": "KENT",
+    "nickname": "Kent State"
+  },
+  "Kentucky Wildcats": {
+    "espn_id": "96",
+    "display_name": "Kentucky Wildcats",
+    "short_display_name": "Kentucky",
+    "location": "Kentucky",
+    "abbreviation": "UK",
+    "nickname": "Kentucky"
+  },
+  "LSU Tigers": {
+    "espn_id": "99",
+    "display_name": "LSU Tigers",
+    "short_display_name": "LSU",
+    "location": "LSU",
+    "abbreviation": "LSU",
+    "nickname": "LSU"
+  },
+  "La Salle Explorers": {
+    "espn_id": "2325",
+    "display_name": "La Salle Explorers",
+    "short_display_name": "La Salle",
+    "location": "La Salle",
+    "abbreviation": "LAS",
+    "nickname": "La Salle"
+  },
+  "Lafayette Leopards": {
+    "espn_id": "322",
+    "display_name": "Lafayette Leopards",
+    "short_display_name": "Lafayette",
+    "location": "Lafayette",
+    "abbreviation": "LAF",
+    "nickname": "Lafayette"
+  },
+  "Lamar Cardinals": {
+    "espn_id": "2320",
+    "display_name": "Lamar Cardinals",
+    "short_display_name": "Lamar",
+    "location": "Lamar",
+    "abbreviation": "LAM",
+    "nickname": "Lamar"
+  },
+  "Le Moyne Dolphins": {
+    "espn_id": "2330",
+    "display_name": "Le Moyne Dolphins",
+    "short_display_name": "Le Moyne",
+    "location": "Le Moyne",
+    "abbreviation": "LEM",
+    "nickname": "Le Moyne"
+  },
+  "Lehigh Mountain Hawks": {
+    "espn_id": "2329",
+    "display_name": "Lehigh Mountain Hawks",
+    "short_display_name": "Lehigh",
+    "location": "Lehigh",
+    "abbreviation": "LEH",
+    "nickname": "Lehigh"
+  },
+  "Liberty Flames": {
+    "espn_id": "2335",
+    "display_name": "Liberty Flames",
+    "short_display_name": "Liberty",
+    "location": "Liberty",
+    "abbreviation": "LIB",
+    "nickname": "Liberty"
+  },
+  "Lipscomb Bisons": {
+    "espn_id": "288",
+    "display_name": "Lipscomb Bisons",
+    "short_display_name": "Lipscomb",
+    "location": "Lipscomb",
+    "abbreviation": "LIP",
+    "nickname": "Lipscomb"
+  },
+  "Little Rock Trojans": {
+    "espn_id": "2031",
+    "display_name": "Little Rock Trojans",
+    "short_display_name": "Little Rock",
+    "location": "Little Rock",
+    "abbreviation": "LR",
+    "nickname": "Little Rock"
+  },
+  "Long Beach State Beach": {
+    "espn_id": "299",
+    "display_name": "Long Beach State Beach",
+    "short_display_name": "Long Beach St",
+    "location": "Long Beach State",
+    "abbreviation": "LBSU",
+    "nickname": "Long Beach St"
+  },
+  "Long Island University Sharks": {
+    "espn_id": "112358",
+    "display_name": "Long Island University Sharks",
+    "short_display_name": "Long Island",
+    "location": "Long Island University",
+    "abbreviation": "LIU",
+    "nickname": "Long Island"
+  },
+  "Longwood Lancers": {
+    "espn_id": "2344",
+    "display_name": "Longwood Lancers",
+    "short_display_name": "Longwood",
+    "location": "Longwood",
+    "abbreviation": "LONG",
+    "nickname": "Longwood"
+  },
+  "Louisiana Ragin' Cajuns": {
+    "espn_id": "309",
+    "display_name": "Louisiana Ragin' Cajuns",
+    "short_display_name": "Louisiana",
+    "location": "Louisiana",
+    "abbreviation": "UL",
+    "nickname": "Louisiana"
+  },
+  "Louisiana Tech Bulldogs": {
+    "espn_id": "2348",
+    "display_name": "Louisiana Tech Bulldogs",
+    "short_display_name": "Louisiana Tech",
+    "location": "Louisiana Tech",
+    "abbreviation": "LT",
+    "nickname": "Louisiana Tech"
+  },
+  "Louisville Cardinals": {
+    "espn_id": "97",
+    "display_name": "Louisville Cardinals",
+    "short_display_name": "Louisville",
+    "location": "Louisville",
+    "abbreviation": "LOU",
+    "nickname": "Louisville"
+  },
+  "Loyola Chicago Ramblers": {
+    "espn_id": "2350",
+    "display_name": "Loyola Chicago Ramblers",
+    "short_display_name": "Loyola Chicago",
+    "location": "Loyola Chicago",
+    "abbreviation": "LUC",
+    "nickname": "Loyola Chicago"
+  },
+  "Loyola Maryland Greyhounds": {
+    "espn_id": "2352",
+    "display_name": "Loyola Maryland Greyhounds",
+    "short_display_name": "Loyola MD",
+    "location": "Loyola Maryland",
+    "abbreviation": "L-MD",
+    "nickname": "Loyola MD"
+  },
+  "Loyola Marymount Lions": {
+    "espn_id": "2351",
+    "display_name": "Loyola Marymount Lions",
+    "short_display_name": "LMU",
+    "location": "Loyola Marymount",
+    "abbreviation": "LMU",
+    "nickname": "LMU"
+  },
+  "Maine Black Bears": {
+    "espn_id": "311",
+    "display_name": "Maine Black Bears",
+    "short_display_name": "Maine",
+    "location": "Maine",
+    "abbreviation": "ME",
+    "nickname": "Maine"
+  },
+  "Manhattan Jaspers": {
+    "espn_id": "2363",
+    "display_name": "Manhattan Jaspers",
+    "short_display_name": "Manhattan",
+    "location": "Manhattan",
+    "abbreviation": "MAN",
+    "nickname": "Manhattan"
+  },
+  "Marist Red Foxes": {
+    "espn_id": "2368",
+    "display_name": "Marist Red Foxes",
+    "short_display_name": "Marist",
+    "location": "Marist",
+    "abbreviation": "MRST",
+    "nickname": "Marist"
+  },
+  "Marquette Golden Eagles": {
+    "espn_id": "269",
+    "display_name": "Marquette Golden Eagles",
+    "short_display_name": "Marquette",
+    "location": "Marquette",
+    "abbreviation": "MARQ",
+    "nickname": "Marquette"
+  },
+  "Marshall Thundering Herd": {
+    "espn_id": "276",
+    "display_name": "Marshall Thundering Herd",
+    "short_display_name": "Marshall",
+    "location": "Marshall",
+    "abbreviation": "MRSH",
+    "nickname": "Marshall"
+  },
+  "Maryland Eastern Shore Hawks": {
+    "espn_id": "2379",
+    "display_name": "Maryland Eastern Shore Hawks",
+    "short_display_name": "MD Eastern",
+    "location": "Maryland Eastern Shore",
+    "abbreviation": "UMES",
+    "nickname": "MD Eastern"
+  },
+  "Maryland Terrapins": {
+    "espn_id": "120",
+    "display_name": "Maryland Terrapins",
+    "short_display_name": "Maryland",
+    "location": "Maryland",
+    "abbreviation": "MD",
+    "nickname": "Maryland"
+  },
+  "Massachusetts Minutemen": {
+    "espn_id": "113",
+    "display_name": "Massachusetts Minutemen",
+    "short_display_name": "UMass",
+    "location": "Massachusetts",
+    "abbreviation": "MASS",
+    "nickname": "UMass"
+  },
+  "McNeese Cowboys": {
+    "espn_id": "2377",
+    "display_name": "McNeese Cowboys",
+    "short_display_name": "McNeese",
+    "location": "McNeese",
+    "abbreviation": "MCN",
+    "nickname": "McNeese"
+  },
+  "Memphis Tigers": {
+    "espn_id": "235",
+    "display_name": "Memphis Tigers",
+    "short_display_name": "Memphis",
+    "location": "Memphis",
+    "abbreviation": "MEM",
+    "nickname": "Memphis"
+  },
+  "Mercer Bears": {
+    "espn_id": "2382",
+    "display_name": "Mercer Bears",
+    "short_display_name": "Mercer",
+    "location": "Mercer",
+    "abbreviation": "MER",
+    "nickname": "Mercer"
+  },
+  "Mercyhurst Lakers": {
+    "espn_id": "2385",
+    "display_name": "Mercyhurst Lakers",
+    "short_display_name": "Mercyhurst",
+    "location": "Mercyhurst",
+    "abbreviation": "MERC",
+    "nickname": "Mercyhurst"
+  },
+  "Merrimack Warriors": {
+    "espn_id": "2771",
+    "display_name": "Merrimack Warriors",
+    "short_display_name": "Merrimack",
+    "location": "Merrimack",
+    "abbreviation": "MRMK",
+    "nickname": "Merrimack"
+  },
+  "Miami (OH) RedHawks": {
+    "espn_id": "193",
+    "display_name": "Miami (OH) RedHawks",
+    "short_display_name": "Miami OH",
+    "location": "Miami (OH)",
+    "abbreviation": "M-OH",
+    "nickname": "Miami OH"
+  },
+  "Miami Hurricanes": {
+    "espn_id": "2390",
+    "display_name": "Miami Hurricanes",
+    "short_display_name": "Miami",
+    "location": "Miami",
+    "abbreviation": "MIA",
+    "nickname": "Miami"
+  },
+  "Michigan State Spartans": {
+    "espn_id": "127",
+    "display_name": "Michigan State Spartans",
+    "short_display_name": "Michigan St",
+    "location": "Michigan State",
+    "abbreviation": "MSU",
+    "nickname": "Michigan St"
+  },
+  "Michigan Wolverines": {
+    "espn_id": "130",
+    "display_name": "Michigan Wolverines",
+    "short_display_name": "Michigan",
+    "location": "Michigan",
+    "abbreviation": "MICH",
+    "nickname": "Michigan"
+  },
+  "Middle Tennessee Blue Raiders": {
+    "espn_id": "2393",
+    "display_name": "Middle Tennessee Blue Raiders",
+    "short_display_name": "MTSU",
+    "location": "Middle Tennessee",
+    "abbreviation": "MTSU",
+    "nickname": "MTSU"
+  },
+  "Milwaukee Panthers": {
+    "espn_id": "270",
+    "display_name": "Milwaukee Panthers",
+    "short_display_name": "Milwaukee",
+    "location": "Milwaukee",
+    "abbreviation": "MILW",
+    "nickname": "Milwaukee"
+  },
+  "Minnesota Golden Gophers": {
+    "espn_id": "135",
+    "display_name": "Minnesota Golden Gophers",
+    "short_display_name": "Minnesota",
+    "location": "Minnesota",
+    "abbreviation": "MINN",
+    "nickname": "Minnesota"
+  },
+  "Mississippi State Bulldogs": {
+    "espn_id": "344",
+    "display_name": "Mississippi State Bulldogs",
+    "short_display_name": "Mississippi St",
+    "location": "Mississippi State",
+    "abbreviation": "MSST",
+    "nickname": "Mississippi St"
+  },
+  "Mississippi Valley State Delta Devils": {
+    "espn_id": "2400",
+    "display_name": "Mississippi Valley State Delta Devils",
+    "short_display_name": "Miss Valley St",
+    "location": "Mississippi Valley State",
+    "abbreviation": "MVSU",
+    "nickname": "Miss Valley St"
+  },
+  "Missouri State Bears": {
+    "espn_id": "2623",
+    "display_name": "Missouri State Bears",
+    "short_display_name": "Missouri St",
+    "location": "Missouri State",
+    "abbreviation": "MOST",
+    "nickname": "Missouri St"
+  },
+  "Missouri Tigers": {
+    "espn_id": "142",
+    "display_name": "Missouri Tigers",
+    "short_display_name": "Missouri",
+    "location": "Missouri",
+    "abbreviation": "MIZ",
+    "nickname": "Missouri"
+  },
+  "Monmouth Hawks": {
+    "espn_id": "2405",
+    "display_name": "Monmouth Hawks",
+    "short_display_name": "Monmouth",
+    "location": "Monmouth",
+    "abbreviation": "MONM",
+    "nickname": "Monmouth"
+  },
+  "Montana Grizzlies": {
+    "espn_id": "149",
+    "display_name": "Montana Grizzlies",
+    "short_display_name": "Montana",
+    "location": "Montana",
+    "abbreviation": "MONT",
+    "nickname": "Montana"
+  },
+  "Montana State Bobcats": {
+    "espn_id": "147",
+    "display_name": "Montana State Bobcats",
+    "short_display_name": "Montana St",
+    "location": "Montana State",
+    "abbreviation": "MTST",
+    "nickname": "Montana St"
+  },
+  "Morehead State Eagles": {
+    "espn_id": "2413",
+    "display_name": "Morehead State Eagles",
+    "short_display_name": "Morehead St",
+    "location": "Morehead State",
+    "abbreviation": "MORE",
+    "nickname": "Morehead St"
+  },
+  "Morgan State Bears": {
+    "espn_id": "2415",
+    "display_name": "Morgan State Bears",
+    "short_display_name": "Morgan St",
+    "location": "Morgan State",
+    "abbreviation": "MORG",
+    "nickname": "Morgan St"
+  },
+  "Mount St. Mary's Mountaineers": {
+    "espn_id": "116",
+    "display_name": "Mount St. Mary's Mountaineers",
+    "short_display_name": "Mount St Marys",
+    "location": "Mount St. Mary's",
+    "abbreviation": "MSM",
+    "nickname": "Mount St Marys"
+  },
+  "Murray State Racers": {
+    "espn_id": "93",
+    "display_name": "Murray State Racers",
+    "short_display_name": "Murray St",
+    "location": "Murray State",
+    "abbreviation": "MUR",
+    "nickname": "Murray St"
+  },
+  "NC State Wolfpack": {
+    "espn_id": "152",
+    "display_name": "NC State Wolfpack",
+    "short_display_name": "NC State",
+    "location": "NC State",
+    "abbreviation": "NCSU",
+    "nickname": "NC State"
+  },
+  "NJIT Highlanders": {
+    "espn_id": "2885",
+    "display_name": "NJIT Highlanders",
+    "short_display_name": "NJIT",
+    "location": "NJIT",
+    "abbreviation": "NJIT",
+    "nickname": "NJIT"
+  },
+  "Navy Midshipmen": {
+    "espn_id": "2426",
+    "display_name": "Navy Midshipmen",
+    "short_display_name": "Navy",
+    "location": "Navy",
+    "abbreviation": "NAVY",
+    "nickname": "Navy"
+  },
+  "Nebraska Cornhuskers": {
+    "espn_id": "158",
+    "display_name": "Nebraska Cornhuskers",
+    "short_display_name": "Nebraska",
+    "location": "Nebraska",
+    "abbreviation": "NEB",
+    "nickname": "Nebraska"
+  },
+  "Nevada Wolf Pack": {
+    "espn_id": "2440",
+    "display_name": "Nevada Wolf Pack",
+    "short_display_name": "Nevada",
+    "location": "Nevada",
+    "abbreviation": "NEV",
+    "nickname": "Nevada"
+  },
+  "New Hampshire Wildcats": {
+    "espn_id": "160",
+    "display_name": "New Hampshire Wildcats",
+    "short_display_name": "New Hampshire",
+    "location": "New Hampshire",
+    "abbreviation": "UNH",
+    "nickname": "New Hampshire"
+  },
+  "New Haven Chargers": {
+    "espn_id": "2441",
+    "display_name": "New Haven Chargers",
+    "short_display_name": "New Haven",
+    "location": "New Haven",
+    "abbreviation": "NHVN",
+    "nickname": "New Haven"
+  },
+  "New Mexico Lobos": {
+    "espn_id": "167",
+    "display_name": "New Mexico Lobos",
+    "short_display_name": "New Mexico",
+    "location": "New Mexico",
+    "abbreviation": "UNM",
+    "nickname": "New Mexico"
+  },
+  "New Mexico State Aggies": {
+    "espn_id": "166",
+    "display_name": "New Mexico State Aggies",
+    "short_display_name": "New Mexico St",
+    "location": "New Mexico State",
+    "abbreviation": "NMSU",
+    "nickname": "New Mexico St"
+  },
+  "New Orleans Privateers": {
+    "espn_id": "2443",
+    "display_name": "New Orleans Privateers",
+    "short_display_name": "New Orleans",
+    "location": "New Orleans",
+    "abbreviation": "UNO",
+    "nickname": "New Orleans"
+  },
+  "Niagara Purple Eagles": {
+    "espn_id": "315",
+    "display_name": "Niagara Purple Eagles",
+    "short_display_name": "Niagara",
+    "location": "Niagara",
+    "abbreviation": "NIA",
+    "nickname": "Niagara"
+  },
+  "Nicholls Colonels": {
+    "espn_id": "2447",
+    "display_name": "Nicholls Colonels",
+    "short_display_name": "Nicholls",
+    "location": "Nicholls",
+    "abbreviation": "NICH",
+    "nickname": "Nicholls"
+  },
+  "Norfolk State Spartans": {
+    "espn_id": "2450",
+    "display_name": "Norfolk State Spartans",
+    "short_display_name": "Norfolk St",
+    "location": "Norfolk State",
+    "abbreviation": "NORF",
+    "nickname": "Norfolk St"
+  },
+  "North Alabama Lions": {
+    "espn_id": "2453",
+    "display_name": "North Alabama Lions",
+    "short_display_name": "North Alabama",
+    "location": "North Alabama",
+    "abbreviation": "UNA",
+    "nickname": "North Alabama"
+  },
+  "North Carolina A&T Aggies": {
+    "espn_id": "2448",
+    "display_name": "North Carolina A&T Aggies",
+    "short_display_name": "NC A&T",
+    "location": "North Carolina A&T",
+    "abbreviation": "NCAT",
+    "nickname": "NC A&T"
+  },
+  "North Carolina Central Eagles": {
+    "espn_id": "2428",
+    "display_name": "North Carolina Central Eagles",
+    "short_display_name": "NC Central",
+    "location": "North Carolina Central",
+    "abbreviation": "NCCU",
+    "nickname": "NC Central"
+  },
+  "North Carolina Tar Heels": {
+    "espn_id": "153",
+    "display_name": "North Carolina Tar Heels",
+    "short_display_name": "North Carolina",
+    "location": "North Carolina",
+    "abbreviation": "UNC",
+    "nickname": "North Carolina"
+  },
+  "North Dakota Fighting Hawks": {
+    "espn_id": "155",
+    "display_name": "North Dakota Fighting Hawks",
+    "short_display_name": "North Dakota",
+    "location": "North Dakota",
+    "abbreviation": "UND",
+    "nickname": "North Dakota"
+  },
+  "North Dakota State Bison": {
+    "espn_id": "2449",
+    "display_name": "North Dakota State Bison",
+    "short_display_name": "N Dakota St",
+    "location": "North Dakota State",
+    "abbreviation": "NDSU",
+    "nickname": "N Dakota St"
+  },
+  "North Florida Ospreys": {
+    "espn_id": "2454",
+    "display_name": "North Florida Ospreys",
+    "short_display_name": "North Florida",
+    "location": "North Florida",
+    "abbreviation": "UNF",
+    "nickname": "North Florida"
+  },
+  "North Texas Mean Green": {
+    "espn_id": "249",
+    "display_name": "North Texas Mean Green",
+    "short_display_name": "North Texas",
+    "location": "North Texas",
+    "abbreviation": "UNT",
+    "nickname": "North Texas"
+  },
+  "Northeastern Huskies": {
+    "espn_id": "111",
+    "display_name": "Northeastern Huskies",
+    "short_display_name": "Northeastern",
+    "location": "Northeastern",
+    "abbreviation": "NE",
+    "nickname": "Northeastern"
+  },
+  "Northern Arizona Lumberjacks": {
+    "espn_id": "2464",
+    "display_name": "Northern Arizona Lumberjacks",
+    "short_display_name": "N Arizona",
+    "location": "Northern Arizona",
+    "abbreviation": "NAU",
+    "nickname": "N Arizona"
+  },
+  "Northern Colorado Bears": {
+    "espn_id": "2458",
+    "display_name": "Northern Colorado Bears",
+    "short_display_name": "N Colorado",
+    "location": "Northern Colorado",
+    "abbreviation": "UNCO",
+    "nickname": "N Colorado"
+  },
+  "Northern Illinois Huskies": {
+    "espn_id": "2459",
+    "display_name": "Northern Illinois Huskies",
+    "short_display_name": "N Illinois",
+    "location": "Northern Illinois",
+    "abbreviation": "NIU",
+    "nickname": "N Illinois"
+  },
+  "Northern Iowa Panthers": {
+    "espn_id": "2460",
+    "display_name": "Northern Iowa Panthers",
+    "short_display_name": "Northern Iowa",
+    "location": "Northern Iowa",
+    "abbreviation": "UNI",
+    "nickname": "Northern Iowa"
+  },
+  "Northern Kentucky Norse": {
+    "espn_id": "94",
+    "display_name": "Northern Kentucky Norse",
+    "short_display_name": "N Kentucky",
+    "location": "Northern Kentucky",
+    "abbreviation": "NKU",
+    "nickname": "N Kentucky"
+  },
+  "Northwestern State Demons": {
+    "espn_id": "2466",
+    "display_name": "Northwestern State Demons",
+    "short_display_name": "N'Western St",
+    "location": "Northwestern State",
+    "abbreviation": "NWST",
+    "nickname": "N'Western St"
+  },
+  "Northwestern Wildcats": {
+    "espn_id": "77",
+    "display_name": "Northwestern Wildcats",
+    "short_display_name": "Northwestern",
+    "location": "Northwestern",
+    "abbreviation": "NU",
+    "nickname": "Northwestern"
+  },
+  "Notre Dame Fighting Irish": {
+    "espn_id": "87",
+    "display_name": "Notre Dame Fighting Irish",
+    "short_display_name": "Notre Dame",
+    "location": "Notre Dame",
+    "abbreviation": "ND",
+    "nickname": "Notre Dame"
+  },
+  "Oakland Golden Grizzlies": {
+    "espn_id": "2473",
+    "display_name": "Oakland Golden Grizzlies",
+    "short_display_name": "Oakland",
+    "location": "Oakland",
+    "abbreviation": "OAK",
+    "nickname": "Oakland"
+  },
+  "Ohio Bobcats": {
+    "espn_id": "195",
+    "display_name": "Ohio Bobcats",
+    "short_display_name": "Ohio",
+    "location": "Ohio",
+    "abbreviation": "OHIO",
+    "nickname": "Ohio"
+  },
+  "Ohio State Buckeyes": {
+    "espn_id": "194",
+    "display_name": "Ohio State Buckeyes",
+    "short_display_name": "Ohio State",
+    "location": "Ohio State",
+    "abbreviation": "OSU",
+    "nickname": "Ohio State"
+  },
+  "Oklahoma Sooners": {
+    "espn_id": "201",
+    "display_name": "Oklahoma Sooners",
+    "short_display_name": "Oklahoma",
+    "location": "Oklahoma",
+    "abbreviation": "OU",
+    "nickname": "Oklahoma"
+  },
+  "Oklahoma State Cowboys": {
+    "espn_id": "197",
+    "display_name": "Oklahoma State Cowboys",
+    "short_display_name": "Oklahoma St",
+    "location": "Oklahoma State",
+    "abbreviation": "OKST",
+    "nickname": "Oklahoma St"
+  },
+  "Old Dominion Monarchs": {
+    "espn_id": "295",
+    "display_name": "Old Dominion Monarchs",
+    "short_display_name": "Old Dominion",
+    "location": "Old Dominion",
+    "abbreviation": "ODU",
+    "nickname": "Old Dominion"
+  },
+  "Ole Miss Rebels": {
+    "espn_id": "145",
+    "display_name": "Ole Miss Rebels",
+    "short_display_name": "Ole Miss",
+    "location": "Ole Miss",
+    "abbreviation": "MISS",
+    "nickname": "Ole Miss"
+  },
+  "Omaha Mavericks": {
+    "espn_id": "2437",
+    "display_name": "Omaha Mavericks",
+    "short_display_name": "Omaha",
+    "location": "Omaha",
+    "abbreviation": "OMA",
+    "nickname": "Omaha"
+  },
+  "Oral Roberts Golden Eagles": {
+    "espn_id": "198",
+    "display_name": "Oral Roberts Golden Eagles",
+    "short_display_name": "Oral Roberts",
+    "location": "Oral Roberts",
+    "abbreviation": "ORU",
+    "nickname": "Oral Roberts"
+  },
+  "Oregon Ducks": {
+    "espn_id": "2483",
+    "display_name": "Oregon Ducks",
+    "short_display_name": "Oregon",
+    "location": "Oregon",
+    "abbreviation": "ORE",
+    "nickname": "Oregon"
+  },
+  "Oregon State Beavers": {
+    "espn_id": "204",
+    "display_name": "Oregon State Beavers",
+    "short_display_name": "Oregon St",
+    "location": "Oregon State",
+    "abbreviation": "ORST",
+    "nickname": "Oregon St"
+  },
+  "Pacific Tigers": {
+    "espn_id": "279",
+    "display_name": "Pacific Tigers",
+    "short_display_name": "Pacific",
+    "location": "Pacific",
+    "abbreviation": "PAC",
+    "nickname": "Pacific"
+  },
+  "Penn State Nittany Lions": {
+    "espn_id": "213",
+    "display_name": "Penn State Nittany Lions",
+    "short_display_name": "Penn State",
+    "location": "Penn State",
+    "abbreviation": "PSU",
+    "nickname": "Penn State"
+  },
+  "Pennsylvania Quakers": {
+    "espn_id": "219",
+    "display_name": "Pennsylvania Quakers",
+    "short_display_name": "Penn",
+    "location": "Pennsylvania",
+    "abbreviation": "PENN",
+    "nickname": "Penn"
+  },
+  "Pepperdine Waves": {
+    "espn_id": "2492",
+    "display_name": "Pepperdine Waves",
+    "short_display_name": "Pepperdine",
+    "location": "Pepperdine",
+    "abbreviation": "PEPP",
+    "nickname": "Pepperdine"
+  },
+  "Pittsburgh Panthers": {
+    "espn_id": "221",
+    "display_name": "Pittsburgh Panthers",
+    "short_display_name": "Pitt",
+    "location": "Pittsburgh",
+    "abbreviation": "PITT",
+    "nickname": "Pitt"
+  },
+  "Portland Pilots": {
+    "espn_id": "2501",
+    "display_name": "Portland Pilots",
+    "short_display_name": "Portland",
+    "location": "Portland",
+    "abbreviation": "PORT",
+    "nickname": "Portland"
+  },
+  "Portland State Vikings": {
+    "espn_id": "2502",
+    "display_name": "Portland State Vikings",
+    "short_display_name": "Portland St",
+    "location": "Portland State",
+    "abbreviation": "PRST",
+    "nickname": "Portland St"
+  },
+  "Prairie View A&M Panthers": {
+    "espn_id": "2504",
+    "display_name": "Prairie View A&M Panthers",
+    "short_display_name": "Prairie View",
+    "location": "Prairie View A&M",
+    "abbreviation": "PV",
+    "nickname": "Prairie View"
+  },
+  "Presbyterian Blue Hose": {
+    "espn_id": "2506",
+    "display_name": "Presbyterian Blue Hose",
+    "short_display_name": "Presbyterian",
+    "location": "Presbyterian",
+    "abbreviation": "PRES",
+    "nickname": "Presbyterian"
+  },
+  "Princeton Tigers": {
+    "espn_id": "163",
+    "display_name": "Princeton Tigers",
+    "short_display_name": "Princeton",
+    "location": "Princeton",
+    "abbreviation": "PRIN",
+    "nickname": "Princeton"
+  },
+  "Providence Friars": {
+    "espn_id": "2507",
+    "display_name": "Providence Friars",
+    "short_display_name": "Providence",
+    "location": "Providence",
+    "abbreviation": "PROV",
+    "nickname": "Providence"
+  },
+  "Purdue Boilermakers": {
+    "espn_id": "2509",
+    "display_name": "Purdue Boilermakers",
+    "short_display_name": "Purdue",
+    "location": "Purdue",
+    "abbreviation": "PUR",
+    "nickname": "Purdue"
+  },
+  "Purdue Fort Wayne Mastodons": {
+    "espn_id": "2870",
+    "display_name": "Purdue Fort Wayne Mastodons",
+    "short_display_name": "Purdue FW",
+    "location": "Purdue Fort Wayne",
+    "abbreviation": "PFW",
+    "nickname": "Purdue FW"
+  },
+  "Quinnipiac Bobcats": {
+    "espn_id": "2514",
+    "display_name": "Quinnipiac Bobcats",
+    "short_display_name": "Quinnipiac",
+    "location": "Quinnipiac",
+    "abbreviation": "QUIN",
+    "nickname": "Quinnipiac"
+  },
+  "Radford Highlanders": {
+    "espn_id": "2515",
+    "display_name": "Radford Highlanders",
+    "short_display_name": "Radford",
+    "location": "Radford",
+    "abbreviation": "RAD",
+    "nickname": "Radford"
+  },
+  "Rhode Island Rams": {
+    "espn_id": "227",
+    "display_name": "Rhode Island Rams",
+    "short_display_name": "Rhode Island",
+    "location": "Rhode Island",
+    "abbreviation": "URI",
+    "nickname": "Rhode Island"
+  },
+  "Rice Owls": {
+    "espn_id": "242",
+    "display_name": "Rice Owls",
+    "short_display_name": "Rice",
+    "location": "Rice",
+    "abbreviation": "RICE",
+    "nickname": "Rice"
+  },
+  "Richmond Spiders": {
+    "espn_id": "257",
+    "display_name": "Richmond Spiders",
+    "short_display_name": "Richmond",
+    "location": "Richmond",
+    "abbreviation": "RICH",
+    "nickname": "Richmond"
+  },
+  "Rider Broncs": {
+    "espn_id": "2520",
+    "display_name": "Rider Broncs",
+    "short_display_name": "Rider",
+    "location": "Rider",
+    "abbreviation": "RID",
+    "nickname": "Rider"
+  },
+  "Robert Morris Colonials": {
+    "espn_id": "2523",
+    "display_name": "Robert Morris Colonials",
+    "short_display_name": "Robert Morris",
+    "location": "Robert Morris",
+    "abbreviation": "RMU",
+    "nickname": "Robert Morris"
+  },
+  "Rutgers Scarlet Knights": {
+    "espn_id": "164",
+    "display_name": "Rutgers Scarlet Knights",
+    "short_display_name": "Rutgers",
+    "location": "Rutgers",
+    "abbreviation": "RUTG",
+    "nickname": "Rutgers"
+  },
+  "SE Louisiana Lions": {
+    "espn_id": "2545",
+    "display_name": "SE Louisiana Lions",
+    "short_display_name": "SE Louisiana",
+    "location": "SE Louisiana",
+    "abbreviation": "SELA",
+    "nickname": "SE Louisiana"
+  },
+  "SIU Edwardsville Cougars": {
+    "espn_id": "2565",
+    "display_name": "SIU Edwardsville Cougars",
+    "short_display_name": "SIUE",
+    "location": "SIU Edwardsville",
+    "abbreviation": "SIUE",
+    "nickname": "SIUE"
+  },
+  "SMU Mustangs": {
+    "espn_id": "2567",
+    "display_name": "SMU Mustangs",
+    "short_display_name": "SMU",
+    "location": "SMU",
+    "abbreviation": "SMU",
+    "nickname": "SMU"
+  },
+  "Sacramento State Hornets": {
+    "espn_id": "16",
+    "display_name": "Sacramento State Hornets",
+    "short_display_name": "Sacramento St",
+    "location": "Sacramento State",
+    "abbreviation": "SAC",
+    "nickname": "Sacramento St"
+  },
+  "Sacred Heart Pioneers": {
+    "espn_id": "2529",
+    "display_name": "Sacred Heart Pioneers",
+    "short_display_name": "Sacred Heart",
+    "location": "Sacred Heart",
+    "abbreviation": "SHU",
+    "nickname": "Sacred Heart"
+  },
+  "Saint Francis Red Flash": {
+    "espn_id": "2598",
+    "display_name": "Saint Francis Red Flash",
+    "short_display_name": "Saint Francis",
+    "location": "Saint Francis",
+    "abbreviation": "SFPA",
+    "nickname": "Saint Francis"
+  },
+  "Saint Joseph's Hawks": {
+    "espn_id": "2603",
+    "display_name": "Saint Joseph's Hawks",
+    "short_display_name": "Saint Joseph's",
+    "location": "Saint Joseph's",
+    "abbreviation": "JOES",
+    "nickname": "Saint Joseph's"
+  },
+  "Saint Louis Billikens": {
+    "espn_id": "139",
+    "display_name": "Saint Louis Billikens",
+    "short_display_name": "Saint Louis",
+    "location": "Saint Louis",
+    "abbreviation": "SLU",
+    "nickname": "Saint Louis"
+  },
+  "Saint Mary's Gaels": {
+    "espn_id": "2608",
+    "display_name": "Saint Mary's Gaels",
+    "short_display_name": "Saint Mary's",
+    "location": "Saint Mary's",
+    "abbreviation": "SMC",
+    "nickname": "Saint Mary's"
+  },
+  "Saint Peter's Peacocks": {
+    "espn_id": "2612",
+    "display_name": "Saint Peter's Peacocks",
+    "short_display_name": "Saint Peter's",
+    "location": "Saint Peter's",
+    "abbreviation": "SPU",
+    "nickname": "Saint Peter's"
+  },
+  "Sam Houston Bearkats": {
+    "espn_id": "2534",
+    "display_name": "Sam Houston Bearkats",
+    "short_display_name": "Sam Houston",
+    "location": "Sam Houston",
+    "abbreviation": "SHSU",
+    "nickname": "Sam Houston"
+  },
+  "Samford Bulldogs": {
+    "espn_id": "2535",
+    "display_name": "Samford Bulldogs",
+    "short_display_name": "Samford",
+    "location": "Samford",
+    "abbreviation": "SAM",
+    "nickname": "Samford"
+  },
+  "San Diego State Aztecs": {
+    "espn_id": "21",
+    "display_name": "San Diego State Aztecs",
+    "short_display_name": "San Diego St",
+    "location": "San Diego State",
+    "abbreviation": "SDSU",
+    "nickname": "San Diego St"
+  },
+  "San Diego Toreros": {
+    "espn_id": "301",
+    "display_name": "San Diego Toreros",
+    "short_display_name": "San Diego",
+    "location": "San Diego",
+    "abbreviation": "USD",
+    "nickname": "San Diego"
+  },
+  "San Francisco Dons": {
+    "espn_id": "2539",
+    "display_name": "San Francisco Dons",
+    "short_display_name": "San Francisco",
+    "location": "San Francisco",
+    "abbreviation": "SF",
+    "nickname": "San Francisco"
+  },
+  "San Jos\u00e9 State Spartans": {
+    "espn_id": "23",
+    "display_name": "San Jos\u00e9 State Spartans",
+    "short_display_name": "San Jos\u00e9 St",
+    "location": "San Jos\u00e9 State",
+    "abbreviation": "SJSU",
+    "nickname": "San Jos\u00e9 St"
+  },
+  "Santa Clara Broncos": {
+    "espn_id": "2541",
+    "display_name": "Santa Clara Broncos",
+    "short_display_name": "Santa Clara",
+    "location": "Santa Clara",
+    "abbreviation": "SCU",
+    "nickname": "Santa Clara"
+  },
+  "Seattle U Redhawks": {
+    "espn_id": "2547",
+    "display_name": "Seattle U Redhawks",
+    "short_display_name": "Seattle U",
+    "location": "Seattle U",
+    "abbreviation": "SEA",
+    "nickname": "Seattle U"
+  },
+  "Seton Hall Pirates": {
+    "espn_id": "2550",
+    "display_name": "Seton Hall Pirates",
+    "short_display_name": "Seton Hall",
+    "location": "Seton Hall",
+    "abbreviation": "HALL",
+    "nickname": "Seton Hall"
+  },
+  "Siena Saints": {
+    "espn_id": "2561",
+    "display_name": "Siena Saints",
+    "short_display_name": "Siena",
+    "location": "Siena",
+    "abbreviation": "SIE",
+    "nickname": "Siena"
+  },
+  "South Alabama Jaguars": {
+    "espn_id": "6",
+    "display_name": "South Alabama Jaguars",
+    "short_display_name": "South Alabama",
+    "location": "South Alabama",
+    "abbreviation": "USA",
+    "nickname": "South Alabama"
+  },
+  "South Carolina Gamecocks": {
+    "espn_id": "2579",
+    "display_name": "South Carolina Gamecocks",
+    "short_display_name": "South Carolina",
+    "location": "South Carolina",
+    "abbreviation": "SC",
+    "nickname": "South Carolina"
+  },
+  "South Carolina State Bulldogs": {
+    "espn_id": "2569",
+    "display_name": "South Carolina State Bulldogs",
+    "short_display_name": "SC State",
+    "location": "South Carolina State",
+    "abbreviation": "SCST",
+    "nickname": "SC State"
+  },
+  "South Carolina Upstate Spartans": {
+    "espn_id": "2908",
+    "display_name": "South Carolina Upstate Spartans",
+    "short_display_name": "SC Upstate",
+    "location": "South Carolina Upstate",
+    "abbreviation": "UPST",
+    "nickname": "SC Upstate"
+  },
+  "South Dakota Coyotes": {
+    "espn_id": "233",
+    "display_name": "South Dakota Coyotes",
+    "short_display_name": "South Dakota",
+    "location": "South Dakota",
+    "abbreviation": "SDAK",
+    "nickname": "South Dakota"
+  },
+  "South Dakota State Jackrabbits": {
+    "espn_id": "2571",
+    "display_name": "South Dakota State Jackrabbits",
+    "short_display_name": "S Dakota St",
+    "location": "South Dakota State",
+    "abbreviation": "SDST",
+    "nickname": "S Dakota St"
+  },
+  "South Florida Bulls": {
+    "espn_id": "58",
+    "display_name": "South Florida Bulls",
+    "short_display_name": "South Florida",
+    "location": "South Florida",
+    "abbreviation": "USF",
+    "nickname": "South Florida"
+  },
+  "Southeast Missouri State Redhawks": {
+    "espn_id": "2546",
+    "display_name": "Southeast Missouri State Redhawks",
+    "short_display_name": "SE Missouri",
+    "location": "Southeast Missouri State",
+    "abbreviation": "SEMO",
+    "nickname": "SE Missouri"
+  },
+  "Southern Illinois Salukis": {
+    "espn_id": "79",
+    "display_name": "Southern Illinois Salukis",
+    "short_display_name": "S Illinois",
+    "location": "Southern Illinois",
+    "abbreviation": "SIU",
+    "nickname": "S Illinois"
+  },
+  "Southern Jaguars": {
+    "espn_id": "2582",
+    "display_name": "Southern Jaguars",
+    "short_display_name": "Southern",
+    "location": "Southern",
+    "abbreviation": "SOU",
+    "nickname": "Southern"
+  },
+  "Southern Miss Golden Eagles": {
+    "espn_id": "2572",
+    "display_name": "Southern Miss Golden Eagles",
+    "short_display_name": "Southern Miss",
+    "location": "Southern Miss",
+    "abbreviation": "USM",
+    "nickname": "Southern Miss"
+  },
+  "Southern Utah Thunderbirds": {
+    "espn_id": "253",
+    "display_name": "Southern Utah Thunderbirds",
+    "short_display_name": "Southern Utah",
+    "location": "Southern Utah",
+    "abbreviation": "SUU",
+    "nickname": "Southern Utah"
+  },
+  "St. Bonaventure Bonnies": {
+    "espn_id": "179",
+    "display_name": "St. Bonaventure Bonnies",
+    "short_display_name": "St Bonaventure",
+    "location": "St. Bonaventure",
+    "abbreviation": "SBU",
+    "nickname": "St Bonaventure"
+  },
+  "St. John's Red Storm": {
+    "espn_id": "2599",
+    "display_name": "St. John's Red Storm",
+    "short_display_name": "St John's",
+    "location": "St. John's",
+    "abbreviation": "SJU",
+    "nickname": "St John's"
+  },
+  "St. Thomas-Minnesota Tommies": {
+    "espn_id": "2900",
+    "display_name": "St. Thomas-Minnesota Tommies",
+    "short_display_name": "St Thomas (MN)",
+    "location": "St. Thomas-Minnesota",
+    "abbreviation": "STMN",
+    "nickname": "St Thomas (MN)"
+  },
+  "Stanford Cardinal": {
+    "espn_id": "24",
+    "display_name": "Stanford Cardinal",
+    "short_display_name": "Stanford",
+    "location": "Stanford",
+    "abbreviation": "STAN",
+    "nickname": "Stanford"
+  },
+  "Stephen F. Austin Lumberjacks": {
+    "espn_id": "2617",
+    "display_name": "Stephen F. Austin Lumberjacks",
+    "short_display_name": "SF Austin",
+    "location": "Stephen F. Austin",
+    "abbreviation": "SFA",
+    "nickname": "SF Austin"
+  },
+  "Stetson Hatters": {
+    "espn_id": "56",
+    "display_name": "Stetson Hatters",
+    "short_display_name": "Stetson",
+    "location": "Stetson",
+    "abbreviation": "STET",
+    "nickname": "Stetson"
+  },
+  "Stonehill Skyhawks": {
+    "espn_id": "284",
+    "display_name": "Stonehill Skyhawks",
+    "short_display_name": "Stonehill",
+    "location": "Stonehill",
+    "abbreviation": "STO",
+    "nickname": "Stonehill"
+  },
+  "Stony Brook Seawolves": {
+    "espn_id": "2619",
+    "display_name": "Stony Brook Seawolves",
+    "short_display_name": "Stony Brook",
+    "location": "Stony Brook",
+    "abbreviation": "STBK",
+    "nickname": "Stony Brook"
+  },
+  "Syracuse Orange": {
+    "espn_id": "183",
+    "display_name": "Syracuse Orange",
+    "short_display_name": "Syracuse",
+    "location": "Syracuse",
+    "abbreviation": "SYR",
+    "nickname": "Syracuse"
+  },
+  "TCU Horned Frogs": {
+    "espn_id": "2628",
+    "display_name": "TCU Horned Frogs",
+    "short_display_name": "TCU",
+    "location": "TCU",
+    "abbreviation": "TCU",
+    "nickname": "TCU"
+  },
+  "Tarleton State Texans": {
+    "espn_id": "2627",
+    "display_name": "Tarleton State Texans",
+    "short_display_name": "Tarleton St",
+    "location": "Tarleton State",
+    "abbreviation": "TAR",
+    "nickname": "Tarleton St"
+  },
+  "Temple Owls": {
+    "espn_id": "218",
+    "display_name": "Temple Owls",
+    "short_display_name": "Temple",
+    "location": "Temple",
+    "abbreviation": "TEM",
+    "nickname": "Temple"
+  },
+  "Tennessee State Tigers": {
+    "espn_id": "2634",
+    "display_name": "Tennessee State Tigers",
+    "short_display_name": "Tennessee St",
+    "location": "Tennessee State",
+    "abbreviation": "TNST",
+    "nickname": "Tennessee St"
+  },
+  "Tennessee Tech Golden Eagles": {
+    "espn_id": "2635",
+    "display_name": "Tennessee Tech Golden Eagles",
+    "short_display_name": "Tennessee Tech",
+    "location": "Tennessee Tech",
+    "abbreviation": "TNTC",
+    "nickname": "Tennessee Tech"
+  },
+  "Tennessee Volunteers": {
+    "espn_id": "2633",
+    "display_name": "Tennessee Volunteers",
+    "short_display_name": "Tennessee",
+    "location": "Tennessee",
+    "abbreviation": "TENN",
+    "nickname": "Tennessee"
+  },
+  "Texas A&M Aggies": {
+    "espn_id": "245",
+    "display_name": "Texas A&M Aggies",
+    "short_display_name": "Texas A&M",
+    "location": "Texas A&M",
+    "abbreviation": "TA&M",
+    "nickname": "Texas A&M"
+  },
+  "Texas A&M-Corpus Christi Islanders": {
+    "espn_id": "357",
+    "display_name": "Texas A&M-Corpus Christi Islanders",
+    "short_display_name": "Texas A&M-CC",
+    "location": "Texas A&M-Corpus Christi",
+    "abbreviation": "AMCC",
+    "nickname": "Texas A&M-CC"
+  },
+  "Texas Longhorns": {
+    "espn_id": "251",
+    "display_name": "Texas Longhorns",
+    "short_display_name": "Texas",
+    "location": "Texas",
+    "abbreviation": "TEX",
+    "nickname": "Texas"
+  },
+  "Texas Southern Tigers": {
+    "espn_id": "2640",
+    "display_name": "Texas Southern Tigers",
+    "short_display_name": "Texas Southern",
+    "location": "Texas Southern",
+    "abbreviation": "TXSO",
+    "nickname": "Texas Southern"
+  },
+  "Texas State Bobcats": {
+    "espn_id": "326",
+    "display_name": "Texas State Bobcats",
+    "short_display_name": "Texas St",
+    "location": "Texas State",
+    "abbreviation": "TXST",
+    "nickname": "Texas St"
+  },
+  "Texas Tech Red Raiders": {
+    "espn_id": "2641",
+    "display_name": "Texas Tech Red Raiders",
+    "short_display_name": "Texas Tech",
+    "location": "Texas Tech",
+    "abbreviation": "TTU",
+    "nickname": "Texas Tech"
+  },
+  "The Citadel Bulldogs": {
+    "espn_id": "2643",
+    "display_name": "The Citadel Bulldogs",
+    "short_display_name": "The Citadel",
+    "location": "The Citadel",
+    "abbreviation": "CIT",
+    "nickname": "The Citadel"
+  },
+  "Toledo Rockets": {
+    "espn_id": "2649",
+    "display_name": "Toledo Rockets",
+    "short_display_name": "Toledo",
+    "location": "Toledo",
+    "abbreviation": "TOL",
+    "nickname": "Toledo"
+  },
+  "Towson Tigers": {
+    "espn_id": "119",
+    "display_name": "Towson Tigers",
+    "short_display_name": "Towson",
+    "location": "Towson",
+    "abbreviation": "TOW",
+    "nickname": "Towson"
+  },
+  "Troy Trojans": {
+    "espn_id": "2653",
+    "display_name": "Troy Trojans",
+    "short_display_name": "Troy",
+    "location": "Troy",
+    "abbreviation": "TROY",
+    "nickname": "Troy"
+  },
+  "Tulane Green Wave": {
+    "espn_id": "2655",
+    "display_name": "Tulane Green Wave",
+    "short_display_name": "Tulane",
+    "location": "Tulane",
+    "abbreviation": "TULN",
+    "nickname": "Tulane"
+  },
+  "Tulsa Golden Hurricane": {
+    "espn_id": "202",
+    "display_name": "Tulsa Golden Hurricane",
+    "short_display_name": "Tulsa",
+    "location": "Tulsa",
+    "abbreviation": "TLSA",
+    "nickname": "Tulsa"
+  },
+  "UAB Blazers": {
+    "espn_id": "5",
+    "display_name": "UAB Blazers",
+    "short_display_name": "UAB",
+    "location": "UAB",
+    "abbreviation": "UAB",
+    "nickname": "UAB"
+  },
+  "UAlbany Great Danes": {
+    "espn_id": "399",
+    "display_name": "UAlbany Great Danes",
+    "short_display_name": "UAlbany",
+    "location": "UAlbany",
+    "abbreviation": "UALB",
+    "nickname": "UAlbany"
+  },
+  "UC Davis Aggies": {
+    "espn_id": "302",
+    "display_name": "UC Davis Aggies",
+    "short_display_name": "UC Davis",
+    "location": "UC Davis",
+    "abbreviation": "UCD",
+    "nickname": "UC Davis"
+  },
+  "UC Irvine Anteaters": {
+    "espn_id": "300",
+    "display_name": "UC Irvine Anteaters",
+    "short_display_name": "UC Irvine",
+    "location": "UC Irvine",
+    "abbreviation": "UCI",
+    "nickname": "UC Irvine"
+  },
+  "UC Riverside Highlanders": {
+    "espn_id": "27",
+    "display_name": "UC Riverside Highlanders",
+    "short_display_name": "UC Riverside",
+    "location": "UC Riverside",
+    "abbreviation": "UCR",
+    "nickname": "UC Riverside"
+  },
+  "UC San Diego Tritons": {
+    "espn_id": "28",
+    "display_name": "UC San Diego Tritons",
+    "short_display_name": "UC San Diego",
+    "location": "UC San Diego",
+    "abbreviation": "UCSD",
+    "nickname": "UC San Diego"
+  },
+  "UC Santa Barbara Gauchos": {
+    "espn_id": "2540",
+    "display_name": "UC Santa Barbara Gauchos",
+    "short_display_name": "Santa Barbara",
+    "location": "UC Santa Barbara",
+    "abbreviation": "UCSB",
+    "nickname": "Santa Barbara"
+  },
+  "UCF Knights": {
+    "espn_id": "2116",
+    "display_name": "UCF Knights",
+    "short_display_name": "UCF",
+    "location": "UCF",
+    "abbreviation": "UCF",
+    "nickname": "UCF"
+  },
+  "UCLA Bruins": {
+    "espn_id": "26",
+    "display_name": "UCLA Bruins",
+    "short_display_name": "UCLA",
+    "location": "UCLA",
+    "abbreviation": "UCLA",
+    "nickname": "UCLA"
+  },
+  "UConn Huskies": {
+    "espn_id": "41",
+    "display_name": "UConn Huskies",
+    "short_display_name": "UConn",
+    "location": "UConn",
+    "abbreviation": "CONN",
+    "nickname": "UConn"
+  },
+  "UIC Flames": {
+    "espn_id": "82",
+    "display_name": "UIC Flames",
+    "short_display_name": "UIC",
+    "location": "UIC",
+    "abbreviation": "UIC",
+    "nickname": "UIC"
+  },
+  "UL Monroe Warhawks": {
+    "espn_id": "2433",
+    "display_name": "UL Monroe Warhawks",
+    "short_display_name": "UL Monroe",
+    "location": "UL Monroe",
+    "abbreviation": "ULM",
+    "nickname": "UL Monroe"
+  },
+  "UMBC Retrievers": {
+    "espn_id": "2378",
+    "display_name": "UMBC Retrievers",
+    "short_display_name": "UMBC",
+    "location": "UMBC",
+    "abbreviation": "UMBC",
+    "nickname": "UMBC"
+  },
+  "UMass Lowell River Hawks": {
+    "espn_id": "2349",
+    "display_name": "UMass Lowell River Hawks",
+    "short_display_name": "UMass Lowell",
+    "location": "UMass Lowell",
+    "abbreviation": "UML",
+    "nickname": "UMass Lowell"
+  },
+  "UNC Asheville Bulldogs": {
+    "espn_id": "2427",
+    "display_name": "UNC Asheville Bulldogs",
+    "short_display_name": "UNC Asheville",
+    "location": "UNC Asheville",
+    "abbreviation": "UNCA",
+    "nickname": "UNC Asheville"
+  },
+  "UNC Greensboro Spartans": {
+    "espn_id": "2430",
+    "display_name": "UNC Greensboro Spartans",
+    "short_display_name": "UNC Greensboro",
+    "location": "UNC Greensboro",
+    "abbreviation": "UNCG",
+    "nickname": "UNC Greensboro"
+  },
+  "UNC Wilmington Seahawks": {
+    "espn_id": "350",
+    "display_name": "UNC Wilmington Seahawks",
+    "short_display_name": "UNC Wilmington",
+    "location": "UNC Wilmington",
+    "abbreviation": "UNCW",
+    "nickname": "UNC Wilmington"
+  },
+  "UNLV Rebels": {
+    "espn_id": "2439",
+    "display_name": "UNLV Rebels",
+    "short_display_name": "UNLV",
+    "location": "UNLV",
+    "abbreviation": "UNLV",
+    "nickname": "UNLV"
+  },
+  "USC Trojans": {
+    "espn_id": "30",
+    "display_name": "USC Trojans",
+    "short_display_name": "USC",
+    "location": "USC",
+    "abbreviation": "USC",
+    "nickname": "USC"
+  },
+  "UT Arlington Mavericks": {
+    "espn_id": "250",
+    "display_name": "UT Arlington Mavericks",
+    "short_display_name": "UT Arlington",
+    "location": "UT Arlington",
+    "abbreviation": "UTA",
+    "nickname": "UT Arlington"
+  },
+  "UT Martin Skyhawks": {
+    "espn_id": "2630",
+    "display_name": "UT Martin Skyhawks",
+    "short_display_name": "UT Martin",
+    "location": "UT Martin",
+    "abbreviation": "UTM",
+    "nickname": "UT Martin"
+  },
+  "UT Rio Grande Valley Vaqueros": {
+    "espn_id": "292",
+    "display_name": "UT Rio Grande Valley Vaqueros",
+    "short_display_name": "UT Rio Grande",
+    "location": "UT Rio Grande Valley",
+    "abbreviation": "RGV",
+    "nickname": "UT Rio Grande"
+  },
+  "UTEP Miners": {
+    "espn_id": "2638",
+    "display_name": "UTEP Miners",
+    "short_display_name": "UTEP",
+    "location": "UTEP",
+    "abbreviation": "UTEP",
+    "nickname": "UTEP"
+  },
+  "UTSA Roadrunners": {
+    "espn_id": "2636",
+    "display_name": "UTSA Roadrunners",
+    "short_display_name": "UTSA",
+    "location": "UTSA",
+    "abbreviation": "UTSA",
+    "nickname": "UTSA"
+  },
+  "Utah State Aggies": {
+    "espn_id": "328",
+    "display_name": "Utah State Aggies",
+    "short_display_name": "Utah State",
+    "location": "Utah State",
+    "abbreviation": "USU",
+    "nickname": "Utah State"
+  },
+  "Utah Tech Trailblazers": {
+    "espn_id": "3101",
+    "display_name": "Utah Tech Trailblazers",
+    "short_display_name": "Utah Tech",
+    "location": "Utah Tech",
+    "abbreviation": "UTU",
+    "nickname": "Utah Tech"
+  },
+  "Utah Utes": {
+    "espn_id": "254",
+    "display_name": "Utah Utes",
+    "short_display_name": "Utah",
+    "location": "Utah",
+    "abbreviation": "UTAH",
+    "nickname": "Utah"
+  },
+  "Utah Valley Wolverines": {
+    "espn_id": "3084",
+    "display_name": "Utah Valley Wolverines",
+    "short_display_name": "Utah Valley",
+    "location": "Utah Valley",
+    "abbreviation": "UVU",
+    "nickname": "Utah Valley"
+  },
+  "VCU Rams": {
+    "espn_id": "2670",
+    "display_name": "VCU Rams",
+    "short_display_name": "VCU",
+    "location": "VCU",
+    "abbreviation": "VCU",
+    "nickname": "VCU"
+  },
+  "VMI Keydets": {
+    "espn_id": "2678",
+    "display_name": "VMI Keydets",
+    "short_display_name": "VMI",
+    "location": "VMI",
+    "abbreviation": "VMI",
+    "nickname": "VMI"
+  },
+  "Valparaiso Beacons": {
+    "espn_id": "2674",
+    "display_name": "Valparaiso Beacons",
+    "short_display_name": "Valparaiso",
+    "location": "Valparaiso",
+    "abbreviation": "VAL",
+    "nickname": "Valparaiso"
+  },
+  "Vanderbilt Commodores": {
+    "espn_id": "238",
+    "display_name": "Vanderbilt Commodores",
+    "short_display_name": "Vanderbilt",
+    "location": "Vanderbilt",
+    "abbreviation": "VAN",
+    "nickname": "Vanderbilt"
+  },
+  "Vermont Catamounts": {
+    "espn_id": "261",
+    "display_name": "Vermont Catamounts",
+    "short_display_name": "Vermont",
+    "location": "Vermont",
+    "abbreviation": "UVM",
+    "nickname": "Vermont"
+  },
+  "Villanova Wildcats": {
+    "espn_id": "222",
+    "display_name": "Villanova Wildcats",
+    "short_display_name": "Villanova",
+    "location": "Villanova",
+    "abbreviation": "VILL",
+    "nickname": "Villanova"
+  },
+  "Virginia Cavaliers": {
+    "espn_id": "258",
+    "display_name": "Virginia Cavaliers",
+    "short_display_name": "Virginia",
+    "location": "Virginia",
+    "abbreviation": "UVA",
+    "nickname": "Virginia"
+  },
+  "Virginia Tech Hokies": {
+    "espn_id": "259",
+    "display_name": "Virginia Tech Hokies",
+    "short_display_name": "Virginia Tech",
+    "location": "Virginia Tech",
+    "abbreviation": "VT",
+    "nickname": "Virginia Tech"
+  },
+  "Wagner Seahawks": {
+    "espn_id": "2681",
+    "display_name": "Wagner Seahawks",
+    "short_display_name": "Wagner",
+    "location": "Wagner",
+    "abbreviation": "WAG",
+    "nickname": "Wagner"
+  },
+  "Wake Forest Demon Deacons": {
+    "espn_id": "154",
+    "display_name": "Wake Forest Demon Deacons",
+    "short_display_name": "Wake Forest",
+    "location": "Wake Forest",
+    "abbreviation": "WAKE",
+    "nickname": "Wake Forest"
+  },
+  "Washington Huskies": {
+    "espn_id": "264",
+    "display_name": "Washington Huskies",
+    "short_display_name": "Washington",
+    "location": "Washington",
+    "abbreviation": "WASH",
+    "nickname": "Washington"
+  },
+  "Washington State Cougars": {
+    "espn_id": "265",
+    "display_name": "Washington State Cougars",
+    "short_display_name": "Washington St",
+    "location": "Washington State",
+    "abbreviation": "WSU",
+    "nickname": "Washington St"
+  },
+  "Weber State Wildcats": {
+    "espn_id": "2692",
+    "display_name": "Weber State Wildcats",
+    "short_display_name": "Weber St",
+    "location": "Weber State",
+    "abbreviation": "WEB",
+    "nickname": "Weber St"
+  },
+  "West Georgia Wolves": {
+    "espn_id": "2698",
+    "display_name": "West Georgia Wolves",
+    "short_display_name": "West Georgia",
+    "location": "West Georgia",
+    "abbreviation": "WGA",
+    "nickname": "West Georgia"
+  },
+  "West Virginia Mountaineers": {
+    "espn_id": "277",
+    "display_name": "West Virginia Mountaineers",
+    "short_display_name": "West Virginia",
+    "location": "West Virginia",
+    "abbreviation": "WVU",
+    "nickname": "West Virginia"
+  },
+  "Western Carolina Catamounts": {
+    "espn_id": "2717",
+    "display_name": "Western Carolina Catamounts",
+    "short_display_name": "W Carolina",
+    "location": "Western Carolina",
+    "abbreviation": "WCU",
+    "nickname": "W Carolina"
+  },
+  "Western Illinois Leathernecks": {
+    "espn_id": "2710",
+    "display_name": "Western Illinois Leathernecks",
+    "short_display_name": "W Illinois",
+    "location": "Western Illinois",
+    "abbreviation": "WIU",
+    "nickname": "W Illinois"
+  },
+  "Western Kentucky Hilltoppers": {
+    "espn_id": "98",
+    "display_name": "Western Kentucky Hilltoppers",
+    "short_display_name": "Western KY",
+    "location": "Western Kentucky",
+    "abbreviation": "WKU",
+    "nickname": "Western KY"
+  },
+  "Western Michigan Broncos": {
+    "espn_id": "2711",
+    "display_name": "Western Michigan Broncos",
+    "short_display_name": "W Michigan",
+    "location": "Western Michigan",
+    "abbreviation": "WMU",
+    "nickname": "W Michigan"
+  },
+  "Wichita State Shockers": {
+    "espn_id": "2724",
+    "display_name": "Wichita State Shockers",
+    "short_display_name": "Wichita St",
+    "location": "Wichita State",
+    "abbreviation": "WICH",
+    "nickname": "Wichita St"
+  },
+  "William & Mary Tribe": {
+    "espn_id": "2729",
+    "display_name": "William & Mary Tribe",
+    "short_display_name": "William & Mary",
+    "location": "William & Mary",
+    "abbreviation": "W&M",
+    "nickname": "William & Mary"
+  },
+  "Winthrop Eagles": {
+    "espn_id": "2737",
+    "display_name": "Winthrop Eagles",
+    "short_display_name": "Winthrop",
+    "location": "Winthrop",
+    "abbreviation": "WIN",
+    "nickname": "Winthrop"
+  },
+  "Wisconsin Badgers": {
+    "espn_id": "275",
+    "display_name": "Wisconsin Badgers",
+    "short_display_name": "Wisconsin",
+    "location": "Wisconsin",
+    "abbreviation": "WIS",
+    "nickname": "Wisconsin"
+  },
+  "Wofford Terriers": {
+    "espn_id": "2747",
+    "display_name": "Wofford Terriers",
+    "short_display_name": "Wofford",
+    "location": "Wofford",
+    "abbreviation": "WOF",
+    "nickname": "Wofford"
+  },
+  "Wright State Raiders": {
+    "espn_id": "2750",
+    "display_name": "Wright State Raiders",
+    "short_display_name": "Wright St",
+    "location": "Wright State",
+    "abbreviation": "WRST",
+    "nickname": "Wright St"
+  },
+  "Wyoming Cowboys": {
+    "espn_id": "2751",
+    "display_name": "Wyoming Cowboys",
+    "short_display_name": "Wyoming",
+    "location": "Wyoming",
+    "abbreviation": "WYO",
+    "nickname": "Wyoming"
+  },
+  "Xavier Musketeers": {
+    "espn_id": "2752",
+    "display_name": "Xavier Musketeers",
+    "short_display_name": "Xavier",
+    "location": "Xavier",
+    "abbreviation": "XAV",
+    "nickname": "Xavier"
+  },
+  "Yale Bulldogs": {
+    "espn_id": "43",
+    "display_name": "Yale Bulldogs",
+    "short_display_name": "Yale",
+    "location": "Yale",
+    "abbreviation": "YALE",
+    "nickname": "Yale"
+  },
+  "Youngstown State Penguins": {
+    "espn_id": "2754",
+    "display_name": "Youngstown State Penguins",
+    "short_display_name": "Youngstown St",
+    "location": "Youngstown State",
+    "abbreviation": "YSU",
+    "nickname": "Youngstown St"
+  }
+}

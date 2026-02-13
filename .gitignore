@@ -12,6 +12,9 @@ __pycache__/
 # VS Code
 .vscode/
 
+# Cached season data (large, re-fetchable)
+data/seasons/
+
 # OS junk
 .DS_Store
 Thumbs.db
