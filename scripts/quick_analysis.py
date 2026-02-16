@@ -23,16 +23,25 @@ def short_name(full_name: str) -> str:
 
 
 def main():
-    try:
-        import pytz
-        et = pytz.timezone('US/Eastern')
-        today = dt.datetime.now(et).date()
-    except:
-        today = dt.date.today()
-    
-    season = today.year if today.month >= 9 else today.year - 1
-    
-    print(f"🏀 CBB Quick Analysis - {today.strftime('%A, %B %d, %Y')}\n")
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Quick CBB analysis')
+    parser.add_argument('--date', type=str, help='Target date YYYY-MM-DD (default: today ET)')
+    args = parser.parse_args()
+
+    if args.date:
+        target_date = dt.datetime.strptime(args.date, '%Y-%m-%d').date()
+    else:
+        try:
+            import pytz
+            et = pytz.timezone('US/Eastern')
+            target_date = dt.datetime.now(et).date()
+        except:
+            target_date = dt.date.today()
+
+    season = target_date.year if target_date.month >= 9 else target_date.year - 1
+
+    print(f"🏀 CBB Quick Analysis - {target_date.strftime('%A, %B %d, %Y')}\n")
     
     api_key = os.environ.get("ODDS_API_KEY", "")
     if not api_key:
@@ -45,7 +54,7 @@ def main():
     
     print("Fetching games...")
     ncaa = NcaaClient()
-    scoreboard = ncaa.get_mens_d1_scoreboard(today.year, today.month, today.day)
+    scoreboard = ncaa.get_mens_d1_scoreboard(target_date.year, target_date.month, target_date.day)
     
     games = []
     for gwrap in scoreboard.get("games", []):
@@ -74,8 +83,19 @@ def main():
     print("Fetching odds...")
     odds_client = OddsClient(api_key=api_key)
     all_odds = odds_client.get_ncaab_odds(regions="us", markets="h2h,spreads,totals")
-    odds_lookup = {f"{go.home_team}|{go.away_team}": go for go in all_odds}
-    print(f"Got odds for {len(odds_lookup)} games")
+
+    # Normalize Odds API team names -> ESPN canonical and match order-independently
+    from scripts.odds_normalizer import canonicalize_game_odds, canonical_pair_key
+
+    odds_by_pair = {}
+    for go in all_odds:
+        canon = canonicalize_game_odds(go, identity_map)
+        if not canon:
+            continue
+        key = canonical_pair_key(canon.home_team, canon.away_team)
+        odds_by_pair[key] = canon
+
+    print(f"Got odds for {len(odds_by_pair)} games (canonicalized)")
     print(f"Credits remaining: {odds_client.remaining_credits}\n")
     
     # Process games incrementally
@@ -84,10 +104,18 @@ def main():
     
     for i, g in enumerate(games[:20], 1):  # Limit to first 20 to avoid timeout
         print(f"[{i}/{min(20, len(games))}] {short_name(g['away'])} @ {short_name(g['home'])}", end=" ... ")
-        
-        odds_key = f"{g['home']}|{g['away']}"
-        if odds_key not in odds_lookup:
+
+        from scripts.odds_normalizer import canonical_pair_key, canonicalize_game_odds
+        pair_key = canonical_pair_key(g['home'], g['away'])
+        base_odds = odds_by_pair.get(pair_key)
+        if not base_odds:
             print("no odds")
+            continue
+
+        # Align odds object to NCAA home/away order
+        game_odds = canonicalize_game_odds(base_odds, identity_map, desired_home=g['home'], desired_away=g['away'])
+        if not game_odds:
+            print("odds name mismatch")
             continue
         
         try:
@@ -111,7 +139,6 @@ def main():
             projection = project_matchup(home_profile, away_profile)
             
             # Analyze value
-            game_odds = odds_lookup[odds_key]
             bets = analyze_game_value_all_books(projection, game_odds)
             
             # Filter to good opportunities
@@ -125,7 +152,7 @@ def main():
                     # Log to DB
                     pick = Pick(
                         game_id=g['game_id'],
-                        date=today.isoformat(),
+                        date=target_date.isoformat(),
                         game=f"{short_name(g['away'])} @ {short_name(g['home'])}",
                         bet_type=bet.bet_type,
                         bet_side=bet.bet_side,

@@ -95,8 +95,16 @@ def main():
         try:
             odds_client = OddsClient(api_key=api_key)
             all_odds = odds_client.get_ncaab_odds(regions="us", markets="h2h,spreads,totals")
-            odds_lookup = {f"{go.home_team}|{go.away_team}": go for go in all_odds}
-            print(f"Got odds for {len(odds_lookup)} games")
+
+            from scripts.odds_normalizer import canonicalize_game_odds, canonical_pair_key
+            odds_by_pair = {}
+            for go in all_odds:
+                canon = canonicalize_game_odds(go, identity_map)
+                if not canon:
+                    continue
+                odds_by_pair[canonical_pair_key(canon.home_team, canon.away_team)] = canon
+
+            print(f"Got odds for {len(odds_by_pair)} games (canonicalized)")
             if odds_client.remaining_credits:
                 print(f"API credits remaining: {odds_client.remaining_credits}")
         except Exception as e:
@@ -132,9 +140,13 @@ def main():
             projection = project_matchup(home_profile, away_profile)
             
             # Find value if we have odds
-            odds_key = f"{g['home']}|{g['away']}"
-            if odds_key in odds_lookup:
-                game_odds = odds_lookup[odds_key]
+            from scripts.odds_normalizer import canonical_pair_key, canonicalize_game_odds
+            pair_key = canonical_pair_key(g['home'], g['away'])
+            base_odds = odds_by_pair.get(pair_key)
+            if base_odds:
+                game_odds = canonicalize_game_odds(base_odds, identity_map, desired_home=g['home'], desired_away=g['away'])
+                if not game_odds:
+                    continue
                 bets = analyze_game_value_all_books(projection, game_odds)
                 
                 # Filter to high-quality opportunities
